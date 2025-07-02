@@ -1,1 +1,3 @@
-# llm-rag-improving-integration-user-stories-pipeline
+# LLM-RAG: Improving Integration of User Stories Pipeline
+
+Este projeto implementa um pipeline baseado em LLM (Large Language Models) com RAG (Retrieval-Augmented Generation) para melhorar a integração de _user stories_ no desenvolvimento de software. O objetivo é utilizar técnicas de NLP e RAG para analisar, complementar e integrar histórias de usuário de forma automatizada e inteligente, auxiliando equipes ágeis a manter coerência, rastreabilidade e completude dos requisitos.
