@@ -1,0 +1,1540 @@
+﻿repositório,título,descrição,labels
+magento/magento2,Price ranges filter takes only min_price for configurable products,"Having a configurable product with options that cost 50, 150 and 250 and a price ranges filters in layered navigation with ranges 0-100, 100-200 and 200-300 will show the product only in the first range, as it takes min_price for the configurable product and there is no other price in ElasticSearch.",Issue: needs update
+magento/magento2,Frozen loop in orders page,"### Preconditions and environment
+
+- Magento version 2.3.6
+- Anything else that would help a developer reproduce the bug- sales>orders>filter by allocated sources
+
+
+### Steps to reproduce
+
+1.Logged in 
+2. sales
+3. orders
+4. clicked on the allocated sources filter
+
+
+### Expected result
+
+I actually didn't mean to click on it so I am not sure what it would have done besides organize the orders in a specific way. 
+
+### Actual result
+
+ ""Something went wrong with processing the default view and we have restored the filter to its original state."" message and a spinning wheel that never goes away
+
+![Image](https://github.com/user-attachments/assets/e0aa9d19-15ed-4c12-99bb-d616065a4473)
+
+### Additional information
+
+I have cleared my cache and cookies and restarted the browser and cannot get out of the spinning wheel. 
+
+### Release note
+
+_No response_
+
+### Triage and priority
+
+- [x] Severity: **S0** _- Affects critical data or functionality and leaves users without workaround._
+- [ ] Severity: **S1** _- Affects critical data or functionality and forces users to employ a workaround._
+- [ ] Severity: **S2** _- Affects non-critical data or functionality and forces users to employ a workaround._
+- [ ] Severity: **S3** _- Affects non-critical data or functionality and does not force users to employ a workaround._
+- [ ] Severity: **S4** _- Affects aesthetics, professional look and feel, “quality” or “usability”._","Issue: needs update, Reported on 2.3.6"
+magento/magento2,"Braintree: ""Client token has expired"" error - Token not regenerated automatically on checkout","### Preconditions and environment
+
+-Magento 2 version: 2.4.7-p3
+-PHP version: 8.2
+-paypal/module-braintree-core version : 4.6.1-p3
+
+-Braintree Payment Method configured with Merchant ID, Public Key, Private Key, and validated Credentials successfully.
+
+### Steps to reproduce
+
+1. Configure Braintree payment in Magento Admin using valid credentials.
+2. Leave the site idle for more than 24 hours (token expiry period).
+3. Visit the checkout page.
+4. Attempt to proceed with Braintree payment.
+
+### Expected result
+
+- Braintree should regenerate the client token automatically if the previous one is expired.
+- Checkout should load the payment method without errors.
+
+### Actual result
+
+Checkout displays an error:
+`Either the client token has expired and a new one should be generated or the tokenization key has been deactivated or deleted.
+`
+Simply opening Stores > Configuration > Sales > Payment Methods in the admin temporarily resolves the issue.
+
+### Additional information
+
+- We have a storefront built on VueJS, checkout and admin interfaces on Magento 2.
+- This issue repeats every Sunday or after site inactivity.
+- Admin config visit appears to refresh the token indirectly.
+- This could be related to the token lifecycle not being managed properly in Magento’s Braintree module.
+
+https://github.com/user-attachments/assets/1e58a7dc-884c-4aa5-9e9a-b3c1d11b3cea
+
+### Release note
+
+**Suggestion**
+Implement a mechanism to regenerate the client token automatically when expired, especially on the checkout load.
+
+### Triage and priority
+
+- [x] Severity: **S0** _- Affects critical data or functionality and leaves users without workaround._
+- [ ] Severity: **S1** _- Affects critical data or functionality and forces users to employ a workaround._
+- [ ] Severity: **S2** _- Affects non-critical data or functionality and forces users to employ a workaround._
+- [ ] Severity: **S3** _- Affects non-critical data or functionality and does not force users to employ a workaround._
+- [ ] Severity: **S4** _- Affects aesthetics, professional look and feel, “quality” or “usability”._",Issue: needs update
+magento/magento2,2.4.8-p1 datepicker - position is wrong on touch devices,"### Preconditions and environment
+
+- Magento version: 2.4.8-p1
+
+### Steps to reproduce
+
+1. Use touch device. It can be mobile phone. Or you can use ""Device preview"" in Google Chrome.
+2. Go to magento admin and enable ""Date of Birth"" field for customer (Stores -> Configuration -> Customers -> Customer Configuration -> Name and Address Options -> **Show Date of Birth = Optional**).
+3. Login to customer account -> Account Information. 
+4. Click on ""Date of Birth"" field.
+
+### Expected result
+
+Datepicker appears right above or below ""Date of Birth"" input field. 
+
+### Actual result
+
+Sometimes datepicker appears too far from ""Date of Birth"" input field. It can be even outside the visisble screen. 
+Browser:
+
+<img width=""1642"" height=""796"" alt=""Image"" src=""https://github.com/user-attachments/assets/3fc81943-08f6-4674-8b1d-bca6d29e7916"" />
+
+Mobile phone:
+<img width=""629"" height=""1271"" alt=""Image"" src=""https://github.com/user-attachments/assets/216b7144-01de-4c96-a7a5-4c89b854e24f"" />
+
+### Additional information
+
+The issue is in file `lib/web/mage/calendar.js` method `_overwriteFindPos`. If we comment everything - it works like it should.
+
+<img width=""1352"" height=""378"" alt=""Image"" src=""https://github.com/user-attachments/assets/92f85d23-3903-457b-9665-71c64d00555d"" />
+
+### Release note
+
+_No response_
+
+### Triage and priority
+
+- [ ] Severity: **S0** _- Affects critical data or functionality and leaves users without workaround._
+- [ ] Severity: **S1** _- Affects critical data or functionality and forces users to employ a workaround._
+- [ ] Severity: **S2** _- Affects non-critical data or functionality and forces users to employ a workaround._
+- [x] Severity: **S3** _- Affects non-critical data or functionality and does not force users to employ a workaround._
+- [ ] Severity: **S4** _- Affects aesthetics, professional look and feel, “quality” or “usability”._","Issue: needs update, Reported on 2.4.8-p1"
+magento/magento2,Import less file from app/design to custom module,"### Preconditions and environment
+
+I do have the custom module and its structure is below. 
+
+app/code/vendor/module/view/frontend/web/css/example.less. 
+
+in the example.less, how can i import additional global less file from app/design folder there?
+
+### Steps to reproduce
+
+a
+
+### Expected result
+
+b
+
+### Actual result
+
+c
+
+### Additional information
+
+_No response_
+
+### Release note
+
+_No response_
+
+### Triage and priority
+
+- [ ] Severity: **S0** _- Affects critical data or functionality and leaves users without workaround._
+- [ ] Severity: **S1** _- Affects critical data or functionality and forces users to employ a workaround._
+- [ ] Severity: **S2** _- Affects non-critical data or functionality and forces users to employ a workaround._
+- [ ] Severity: **S3** _- Affects non-critical data or functionality and does not force users to employ a workaround._
+- [ ] Severity: **S4** _- Affects aesthetics, professional look and feel, “quality” or “usability”._","Issue: needs update, Reported on 2.4.x"
+magento/magento2,2.4.7-p5 - Print Order button is not showing on order view page at frontend side,"### Preconditions and environment
+
+- Magento version - 2.4.7-p5
+- Print Order button is not showing on order view page at frontend side
+
+### Steps to reproduce
+
+1. Log in to your Magento storefront as a registered customer.
+2. In the top navigation or footer, click “My Account”.
+3. From the account dashboard, click “My Orders” in the left sidebar or center panel.
+4. Find the order you wish to print and click the “View Order” link.
+5. On the Order View Page, look at the top right corner or near the order details.
+6. There is not showing the Print order button.
+
+### Expected result
+
+On order view page Order print button should visible.
+
+### Actual result
+
+On order view page Order print button should visible.
+
+### Additional information
+
+_No response_
+
+### Release note
+
+_No response_
+
+### Triage and priority
+
+- [ ] Severity: **S0** _- Affects critical data or functionality and leaves users without workaround._
+- [ ] Severity: **S1** _- Affects critical data or functionality and forces users to employ a workaround._
+- [ ] Severity: **S2** _- Affects non-critical data or functionality and forces users to employ a workaround._
+- [ ] Severity: **S3** _- Affects non-critical data or functionality and does not force users to employ a workaround._
+- [ ] Severity: **S4** _- Affects aesthetics, professional look and feel, “quality” or “usability”._","Issue: needs update, Reported on 2.4.7-p5"
+nopSolutions/nopCommerce,Exception thrown: 'System.InvalidOperationException' in System.Private.CoreLib.dll: 'The given ColumnMapping does not match up with any column in the source or destination.',"Upgrading from 3.8 to 4.9 using following Environment:
+
+1. Windows 11
+2. SQL server 2008 R2 SP3
+3. vscode
+
+and have done the following:
+
+1. pulled current developer branch
+2. cloned current production store DB
+3. run the 3.9 to 4.3 upgrade SQL scripts on our cloned production store DB
+4. Installed and built developer branch without errors
+5. start app, get install page
+6. fill out install form with correct admin store credentials and raw connection string
+
+Results are:
+
+1. breaks on exception `Exception has occurred: CLR/System.InvalidOperationException
+Exception thrown: 'System.InvalidOperationException' in System.Private.CoreLib.dll: 'The given ColumnMapping does not match up with any column in the source or destination.'
+   at Microsoft.Data.SqlClient.SqlBulkCopy.AnalyzeTargetAndCreateUpdateBulkCommand(BulkCopySimpleResultSet internalResults)
+   at Microsoft.Data.SqlClient.SqlBulkCopy.WriteToServerInternalRestContinuedAsync(BulkCopySimpleResultSet internalResults, CancellationToken cts, TaskCompletionSource`1 source)
+--- End of stack trace from previous location ---
+   at LinqToDB.DataProvider.SqlServer.SqlServerBulkCopy.<>c__DisplayClass10_1`1.<<ProviderSpecificCopyInternalAsync>b__3>d.MoveNext()
+   at LinqToDB.DataProvider.BasicBulkCopy.<TraceActionAsync>d__26.MoveNext()
+   at LinqToDB.DataProvider.SqlServer.SqlServerBulkCopy.<ProviderSpecificCopyInternalAsync>d__10`1.MoveNext()
+   at Nop.Data.DataProviders.BaseDataProvider.<BulkInsertEntitiesAsync>d__22`1.MoveNext() in C:\Users\chris\Documents\GitHub\nopCommerce\src\Libraries\Nop.Data\DataProviders\BaseDataProvider.cs:line 391`
+2. Appears to be complaining that columns in the store table do not line up 
+3. confirm that store table indeed was not migrated/updated with new columns
+`CREATE TABLE [dbo].[Store](
+	[Id] [int] IDENTITY(1,1) NOT NULL,
+	[Name] [nvarchar](400) NOT NULL,
+	[Url] [nvarchar](400) NOT NULL,
+	[SslEnabled] [bit] NOT NULL,
+	[Hosts] [nvarchar](1000) NULL,
+	[DisplayOrder] [int] NOT NULL,
+	[CompanyName] [nvarchar](1000) NULL,
+	[CompanyAddress] [nvarchar](1000) NULL,
+	[CompanyPhoneNumber] [nvarchar](1000) NULL,
+	[CompanyVat] [nvarchar](1000) NULL,
+	[DefaultLanguageId] [int] NOT NULL,`
+4. Confirmed that in MigrationVersionInfo table there is an entry 
+`2025-07-31 13:43:42.000	Added new fields to store table	638059361410000000`
+5. confirmed that there are no open transactions on the DB
+`DBCC OPENTRAN;
+No active open transactions.
+DBCC execution completed.`
+
+Indeed it appears that despite all the new entries of migration tasks performed in the MigrationVersionInfo table in fact NONE of them have been done.  I have to believe this is pilot error on my part but if it is seems like there should be better protections built into the app to prevent this?  How can the entries exist in the MigrationVersionInfo  table and the actual work not be done?
+",
+nopSolutions/nopCommerce,"Homepage URL doesn't have ""/en"" when ""SEO friendly URLs with multiple languages"" setting is enabled","Step to reproduce:
+1. Create multiple languages. One of them should be ""English""
+2.  Ensure ""SEO friendly URLs with multiple languages"" setting is enabled
+3. Go to any page. The home page URL (a logo in the top left corder) should contain language prefix. It exists for all languages except ""English""
+
+
+See: Nop.Web\Infrastructure\BaseRouteProvider.cs",bug
+nopSolutions/nopCommerce,MySQL Container Fails: Identifier name too long in Docker Compose Setup,"### Problem Description
+
+I'm trying to run a nopCommerce + MySQL setup using Docker Compose on macOS (Macbook Air - M2 - Arm64). During container startup, MySQL fails with this error:
+
+Setup failed: Identifier name 'FK_CustomerAttributeValue_CustomerAttributeId_CustomerAttribute_Id' is too long
+
+### Environment
+
+- Docker Desktop (macOS)
+- MySQL 8.0
+- nopCommerce with EF Core
+
+### mysql-docker-compose.yml (partial)
+
+```yaml
+services:
+  nopcommerce_web:
+    build: .
+    container_name: nopcommerce
+    ports:
+      - ""80:80""
+    depends_on:
+      - nopcommerce_database
+
+  nopcommerce_database:
+    image: mysql:8.0
+    container_name: nopcommerce_mysql_server
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: mydb
+      MYSQL_USER: nopuser
+      MYSQL_PASSWORD: nop123
+    volumes:
+      - nopcommerce_data:/var/lib/mysql
+
+volumes:
+  nopcommerce_data:
+
+What I Tried
+ - Switched to MySQL 8.0 (And also I tired with MySQL Latest but it didn't work)
+
+ - Simplified the constraint name manually (but not sure where to modify it in EF Core)
+
+ - Verified MySQL is up, but schema fails on setup due to long foreign key names
+
+Help Needed
+ - How to override EF Core to use shorter constraint names?
+
+ - Or how to configure MySQL for longer identifiers if possible?
+
+Thanks in advance!
+Arun
+",bug
+nopSolutions/nopCommerce,Bulk edit products. Editing products without SKU,"Version: nopCommerce 4.80.X
+
+From the bulk edit grid, when a product is set with no SKU and any field is edited and click ""Save all"" button, it throws the following error:
+""System.NullReferenceException: Object reference not set to an instance of an object.""
+The expected behavior should be that the edited field is updated, or if there is any validation issue, a warning message should be displayed instead of throwing an error.
+Please find the reference screenshot attached.
+1. https://prnt.sc/bVOFBygYbiOh
+2. https://prnt.sc/Jyo5pygz468o
+3. https://prnt.sc/5s0DzIvaZ9GR
+
+Steps to reproduce:
+1. Go to  nopCommerce Admin >> Catalog >> Products >> Bulk Edit Products
+2. Make any product’s SKU field empty and edit any field of that product
+3. Click the Save All button
+
+Forum source: https://www.nopcommerce.com/en/boards/topic/102359/bulk-edit-products-edit-and-save-issue-in-480
+
+
+It will also happen if you just select the one record having no SKU and ""Save selected"".",bug
+nopSolutions/nopCommerce,"Discount Limitation ""N Times Per Customer"" Not Enforced for Guest Customers","## Description
+In nopCommerce 4.60, the ""N times per customer"" discount limitation is not enforced for guest customers. This allows guest customers to use the same discount code multiple times, even when the limitation is set to 1. This results in revenue loss and undermines discount campaign integrity.
+
+## Steps to Reproduce
+1. Create a discount with ""N times per customer"" = 1 and a coupon code (e.g., THANKYOU10).
+2. Place an order as a guest customer using the code.
+3. Place another order as the same guest customer (same customer ID) and use the code again.
+4. The discount is incorrectly applied a second time.
+
+## Expected Behavior
+The system should reject the discount code on the second use by the same guest customer and display an error such as ""This coupon code has already been used"".
+
+## Actual Behavior
+The discount is accepted and applied successfully for the second order by the same guest customer. No error is shown.
+
+## Root Cause
+In `DiscountService.cs`, the limitation check for `DiscountLimitationType.NTimesPerCustomer` is only performed for registered customers:
+
+```csharp
+case DiscountLimitationType.NTimesPerCustomer:
+    if (await _customerService.IsRegisteredAsync(customer))
+    {
+        var usedTimes = (await GetAllDiscountUsageHistoryAsync(discount.Id, customer.Id, null, false, 0, 1)).TotalCount;
+        if (usedTimes >= discount.LimitationTimes)
+        {
+            result.Errors = new List<string> {await _localizationService.GetResourceAsync(""ShoppingCart.Discount.CannotBeUsedAnymore"") };
+            return result;
+        }
+    }
+    break;
+```
+
+This check is skipped for guests, so the limitation is not enforced.
+
+## Proposed Fix
+Remove the `IsRegisteredAsync` check and always check the usage count for the customer ID, regardless of registration status:
+
+```csharp
+case DiscountLimitationType.NTimesPerCustomer:
+    var usedTimes = (await GetAllDiscountUsageHistoryAsync(discount.Id, customer.Id, null, false, 0, 1)).TotalCount;
+    if (usedTimes >= discount.LimitationTimes)
+    {
+        result.Errors = new List<string> {await _localizationService.GetResourceAsync(""ShoppingCart.Discount.CannotBeUsedAnymore"") };
+        return result;
+    }
+    break;
+```
+
+This ensures the limitation is enforced for both registered and guest customers.
+
+## Impact
+- Major revenue impact for stores running discount campaigns.
+- Guest customers can repeatedly use limited-use discount codes.
+",
+nopSolutions/nopCommerce,Use ISO 8601 with timezone for DateTime properties in the JSON-LD models,All DateTime fields in JSON-LD models must be serialized in ISO 8601 format with timezone,refactoring / source code
+opencart/opencart,Item removal handler conflicting with coupon removal button in shopping cart,"**What version of OpenCart are you reporting this for?**
+4.1.0.3
+
+**Describe the bug**
+When viewing the shopping cart, users are able to add coupons, but are not able to remove them. After the coupon removal button exits the ""loading"" status, nothing appears to the user. When inspecting the behavior via the browser dev tools, the actual network request is made to `?route=checkout/cart&language=en-gb`. The coupon's removal button has `formaction=""...?route=extension/opencart/checkout/coupon.remove&language=en-gb""`, so obviously there's an issue here.
+
+Upon further investigation, the issue seems to be that the shopping cart handler for removing products has too broad of a scope, and is catching the event when the coupon removal button is clicked. This is because the coupon stuff is rendered inside the `#shopping-cart` element, and since the removal button has the `.btn-danger` class, and because the shopping cart handler for removing products is applied later than the expected handler in `common.js`, it ultimately undesirably handles the click.
+
+Handler for removing products:
+https://github.com/opencart/opencart/blob/90dcdfa7503ada4dbfcf41d92b14af36e57b21fd/upload/catalog/view/template/checkout/cart.twig#L66
+
+Coupon removal button:
+https://github.com/opencart/opencart/blob/90dcdfa7503ada4dbfcf41d92b14af36e57b21fd/upload/extension/opencart/catalog/view/template/checkout/coupon.twig#L15
+
+Intended handler:
+https://github.com/opencart/opencart/blob/90dcdfa7503ada4dbfcf41d92b14af36e57b21fd/upload/catalog/view/javascript/common.js#L118
+
+**To Reproduce**
+Steps to reproduce the behavior:
+1. Add any product to the shopping cart
+2. View the shopping cart
+3. Add a coupon
+4. Click the button to remove the coupon
+
+**Expected behavior**
+The coupon should be removed, and the user should recieve a success alert.
+
+**Server / Test environment:**
+ - Local development on the host (no Docker)
+ - Linux Mint 22.1
+ - PHP 8.3.23
+ - Brave 1.80.115 (Chromium: 138.0.7204.97)
+
+**Suggested Resolution:**
+As far as I can tell, there's two approaches to fix it. I'm willing to do a PR for the fix, but wanted some feedback from others first. Both fixes would be in `cart.twig`.
+1. Change the handler scope to use `#output-cart` instead of `#shopping-cart`.
+2. Add a dedicated class to the product removal `<a>` elements (e.g. `.remove-item`) and update the handler's selector to use that class instead of `.btn-danger`.",
+opencart/opencart,Opencart demo website not working,"**What version of OpenCart are you reporting this for?**
+NA
+
+**Describe the bug**
+Getting Connection Timed Out error when I try to access https://demo.opencart.com/
+
+What section does it affect?
+Homepage
+
+**To Reproduce**
+Steps to reproduce the behavior:
+1. Go to https://demo.opencart.com/
+2. See error
+
+**Expected behavior**
+Access to the site
+
+**Screenshots / Screen recordings**
+Screenshot attached
+
+<img width=""1920"" height=""1140"" alt=""Image"" src=""https://github.com/user-attachments/assets/3935312d-904e-4725-be74-928dd13ba25b"" />
+
+",
+opencart/opencart,New,"**What version of OpenCart are you reporting this for?**
+
+**Describe the bug**
+A clear and concise description of what the bug is
+What section does it affect?
+
+**To Reproduce**
+Steps to reproduce the behavior:
+1. Go to '...'
+2. Click on '....'
+3. Scroll down to '....'
+4. See error
+
+**Expected behavior**
+A clear and concise description of what you expected to happen.
+
+**Screenshots / Screen recordings**
+If applicable, add screenshots or recordings to help explain your problem. Please keep these short and if you can, edit them to point out when/where the problem is.
+https://www.useloom.com/ is perfect for screen recording with Chrome or with their desktop app
+
+**Server / Test environment (please complete the following information):**
+ - Local development? Deployed to a web server?
+ - Operating system
+ - PHP version
+ - Apache version
+ - Browser(s) tested with [e.g. chrome, safari - if applicable]
+ - Version [e.g. 22]
+
+**Additional context**
+Add any other context about the problem here.
+",
+opencart/opencart,"Inconsistency in validations, controllers without trim Opencart 3.0.4.1 and older.","Hi,
+
+I recommend unifying the inconsistency of validation in address controllers, I encountered this when I created an ocmod where it was necessary to modify the validation $this->request->post['city']
+
+Without trim post['city']:
+catalog/controller/api/payment.php
+47: if ((utf8_strlen($this->request->post['city']) < 2) || (utf8_strlen($this->request->post['city']) > 32)) {
+catalog/controller/api/shipping.php
+48: if ((utf8_strlen($this->request->post['city']) < 2) || (utf8_strlen($this->request->post['city']) > 128)) {
+catalog/controller/checkout/payment_address.php
+117: if ((utf8_strlen($this->request->post['city']) < 2) || (utf8_strlen($this->request->post['city']) > 32)) {
+
+In the catalog/controller/checkout/payment_address.php controller, > 32 was already fixed in Opencart 3.0.4.2
+
+All controllers without trim:
+catalog/controller/api/shipping.php 
+48: if ((utf8_strlen($this->request->post['city']) < 2) || (utf8_strlen($this->request->post['city']) > 128)) {
+catalog/controller/api/voucher.php 
+89: if ((utf8_strlen($this->request->post['from_name']) < 1) || (utf8_strlen($this->request->post['from_name']) > 64)) { 
+97: if ((utf8_strlen($this->request->post['to_name']) < 1) || (utf8_strlen($this->request->post['to_name']) > 64)) {
+catalog/controller/extension/module/paypal_smart_button.php 
+1633: if ((utf8_strlen($this->request->post['telephone']) < 3) || (utf8_strlen($this->request->post['telephone']) > 32)) {
+catalog/controller/extension/payment/paypal.php 
+5608: if ((utf8_strlen($this->request->post['telephone']) < 3) || (utf8_strlen($this->request->post['telephone']) > 32)) {
+catalog/controller/checkout/guest.php 
+176: if ((utf8_strlen($this->request->post['telephone']) < 3) || (utf8_strlen($this->request->post['telephone']) > 32)) {
+catalog/controller/checkout/payment_address.php 
+117: if ((utf8_strlen($this->request->post['city']) < 2) || (utf8_strlen($this->request->post['city']) > 32)) {
+catalog/controller/checkout/register.php 
+130: if ((utf8_strlen($this->request->post['telephone']) < 3) || (utf8_strlen($this->request->post['telephone']) > 32)) {
+catalog/controller/information/contact.php 
+145: if ((utf8_strlen($this->request->post['name']) < 3) || (utf8_strlen($this->request->post['name']) > 32)) { 
+153: if ((utf8_strlen($this->request->post['enquiry']) < 10) || (utf8_strlen($this->request->post['enquiry']) > 3000)) {
+catalog/controller/product/product.php 
+589: if ((utf8_strlen($this->request->post['name']) < 3) || (utf8_strlen($this->request->post['name']) > 25)) { 
+593: if ((utf8_strlen($this->request->post['text']) < 25) || (utf8_strlen($this->request->post['text']) > 1000)) {",
+opencart/opencart,admin menu error,"https://github.com/opencart/opencart/blob/77ef9b7af23a26609793dda2bc76436e11bb7d39/upload/admin/controller/tool/menu.php#L95
+
+array_merge(): Argument #2 must be of type array, null given in ../admin/controller/tool/menu.php on line 95",
+opencart/opencart,"Admin cache refresh doesn't work, No response.","https://github.com/opencart/opencart/blob/2c42b9a9160f8ae567cd03a0f0012ca3660e9091/upload/admin/controller/common/developer.php#L72
+
+ Call to undefined function Opencart\Admin\Controller\Common\oc_delete_file() in ../admin/controller/common/developer.php on line 72",
+PrestaShop/PrestaShop,"For security reasons, you cannot connect to the back office until you have:  SSL is activated. Please connect using the following link to log in to secure mode (https://)","### Prerequisites
+
+- [x] I understand and accept the project's [code of conduct](https://github.com/PrestaShop/PrestaShop/blob/develop/CODE_OF_CONDUCT.md).
+- [x] I have already [searched in existing issues](https://github.com/PrestaShop/PrestaShop/issues?q=is%3Aissue+label%3ABug) and found no previous report of this bug.
+
+### Describe the bug and add attachments
+
+PrestaShop 9.0 and 9.1 same identical issues
+
+PS_ENABLE_SSL: 1 
+
+is activated on docker compose
+
+PS_DOMAIN: prestashop.mariushosting.synology.me
+
+too.
+
+Unable to replicate this issue on the old 8.2.2 version
+
+<img width=""1195"" height=""603"" alt=""Image"" src=""https://github.com/user-attachments/assets/c7be8010-eeaf-4e6d-8694-e061895f81ae"" />
+
+### Expected behavior
+
+PS_ENABLE_SSL: 1 
+
+should work
+
+### Steps to reproduce
+
+PS_ENABLE_SSL: 1 
+
+### PrestaShop version(s) where the bug happened
+
+9.0
+
+### How you installed PrestaShop
+
+_No response_
+
+### PHP version(s) where the bug happened
+
+_No response_
+
+### If your bug is related to a module, specify its name and its version
+
+_No response_
+
+### Your company or customer's name goes here (if applicable).
+
+_No response_","Bug, New"
+PrestaShop/PrestaShop,Error installing PrestaShop 8 locally,"### Prerequisites
+
+- [x] I understand and accept the project's [code of conduct](https://github.com/PrestaShop/PrestaShop/blob/develop/CODE_OF_CONDUCT.md).
+- [x] I have already [searched in existing issues](https://github.com/PrestaShop/PrestaShop/issues?q=is%3Aissue+label%3ABug) and found no previous report of this bug.
+
+### Describe the bug and add attachments
+
+Hello,
+
+I have a store running PrestaShop 1.7 and I'm preparing to switch it to PrestaShop 8. I'm preparing for a PHP 8.3.1 environment.
+I want to develop this new store locally initially.
+I installed Mamp and downloaded Prestahsop 8. After finding several fixes online to make Mamp work, the installation went smoothly until ""Store Installation"" and ""Theme Installation.""
+From then on, I consistently get a 500 error: ""1: HTTP 500 - error - {""success"":true,""message"":""""}""
+
+Here are the error logs.
+In php_error.log (examples but no fatal error) :
+
+[01-août-2025 19:46:20 Europe/Paris] PHP obsolète : la création de la propriété dynamique PrestaShopLogger::$hash est obsolète dans C:\MAMP\htdocs\prestashop8\classes\PrestaShopLogger.php à la ligne 194
+[01-août-2025 19:46:20 Europe/Paris] PHP obsolète : la création de la propriété dynamique PrestaShopLogger::$hash est obsolète dans C:\MAMP\htdocs\prestashop8\classes\PrestaShopLogger.php à la ligne 194
+[01-août-2025 19:46:20 Europe/Paris] PHP obsolète : la création de la propriété dynamique PrestaShopLogger::$hash est obsolète dans C:\MAMP\htdocs\prestashop8\classes\PrestaShopLogger.php à la ligne 194
+[01-août-2025 19:47:00 Europe/Paris] Avis PHP : stream_copy_to_stream() : la lecture de 8 192 octets a échoué avec l’erreur 13. Permission refusée dans C:\MAMP\htdocs\prestashop8\vendor\symfony\symfony\src\Symfony\Component\Filesystem\Filesystem.php à la ligne 66
+[01-août-2025 19:47:03 Europe/Paris] Avertissement PHP : filemtime() : stat failed for C:\MAMP\htdocs\prestashop8\var\cache\prod\ContainerI3OtKvw\appAppKernelProdContainer.php in C:\MAMP\htdocs\prestashop8\vendor\symfony\symfony\src\Symfony\Bundle\FrameworkBundle\Command\CacheClearCommand.php on line 109
+[01-août-2025 19:47:03 Europe/Paris] Avertissement PHP : require(C:\MAMP\htdocs\prestashop8\var\cache\prod\ContainerI3OtKvw\getConsole_Command_CacheWarmupService.php) : Failed to open stream: No such file or directory in C:\MAMP\htdocs\prestashop8\var\cache\prod\ContainerI3OtKvw\appAppKernelProdContainer.php à la ligne 2227
+[01-août-2025 19:47:03 Europe/Paris] Avertissement PHP : require(C:\MAMP\htdocs\prestashop8\var\cache\prod\ContainerI3OtKvw\getSwiftmailer_EmailSender_ListenerService.php) : Échec de l’ouverture du flux : aucun fichier ou répertoire de ce type dans C:\MAMP\htdocs\prestashop8\var\cache\prod\ContainerI3OtKvw\appAppKernelProdContainer.php à la ligne 2227
+
+In Access.log :
+
+127.0.0.1 - - [01/août/2025:19:41:14 +0200] ""POST /prestashop8/install/index.php HTTP/1.1"" 200 4306
+127.0.0.1 - - [01/août/2025:19:41:15 +0200] ""GET /prestashop8/install/index.php?compile_templates=1&bo=1 HTTP/1.1"" 500 20
+127.0.0.1 - - [01/août/2025:19:41:15 +0200] ""GET /prestashop8/install/index.php?compile_templates=1&bo=0 HTTP/1.1"" 500 20
+127.0.0.1 - - [01/août/2025:19:41:19 +0200] ""POST /prestashop8/install/index.php HTTP/1.1"" 200 2851
+127.0.0.1 - - [01/août/2025:19:41:20 +0200] ""GET /prestashop8/install/sandbox/anything.php HTTP/1.1"" 200 22
+127.0.0.1 - - [01/août/2025:19:41:20 +0200] ""GET /prestashop8/install/index.php?compile_templates=1&bo=1 HTTP/1.1"" 500 20
+127.0.0.1 - - [01/août/2025:19:41:20 +0200] ""GET /prestashop8/install/index.php?compile_templates=1&bo=0 HTTP/1.1"" 500 20
+127.0.0.1 - - [01/août/2025:19:41:25 +0200] ""GET /prestashop8/install/index.php?checkDb=true&dbServer=127.0.0.1&dbName=localinstallation&dbLogin=root&dbPassword=root&db_prefix=ps_&clear=1&_=1754070079940 HTTP/1.1"" 200 68
+127.0.0.1 - - [01/août/2025:19:41:28 +0200] ""POST /prestashop8/install/index.php HTTP/1.1"" 200 3258
+127.0.0.1 - - [01/août/2025:19:41:29 +0200] ""GET /prestashop8/install/index.php?compile_templates=1&bo=1 HTTP/1.1"" 500 20
+127.0.0.1 - - [01/août/2025:19:41:29 +0200] ""GET /prestashop8/install/index.php?compile_templates=1&bo=0 HTTP/1.1"" 500 20
+127.0.0.1 - - [01/août/2025:19:41:29 +0200] ""GET /prestashop8/install/index.php?generateSettingsFile=true&_=1754070089523 HTTP/1.1"" 200 47
+127.0.0.1 - - [01/août/2025:19:41:32 +0200] ""GET /prestashop8/install/index.php?installDatabase=true&_=1754070089524 HTTP/1.1"" 200 47
+127.0.0.1 - - [01/août/2025:19:44:51 +0200] ""GET /prestashop8/install/index.php?installDefaultData=true&_=1754070089525 HTTP/1.1"" 200 47
+127.0.0.1 - - [01/août/2025:19:45:41 +0200] ""GET /prestashop8/install/index.php?populateDatabase=true&_=1754070089526 HTTP/1.1"" 200 47
+127.0.0.1 - - [01/août/2025:19:45:52 +0200] ""RÉCUPÉRER /prestashop8/install/index.php?configureShop=true&_=1754070089527 HTTP/1.1"" 200 47
+127.0.0.1 - - [01/août/2025:19:46:01 +0200] ""RÉCUPÉRER /prestashop8/install/index.php?installTheme=true&_=1754070089528 HTTP/1.1"" 500 539
+
+Thank you for any help you can provide.
+
+Claire
+
+### Expected behavior
+
+<img width=""1328"" height=""845"" alt=""Image"" src=""https://github.com/user-attachments/assets/d0278de9-8d6f-4077-ae1a-31b94a987fce"" />
+<img width=""1529"" height=""893"" alt=""Image"" src=""https://github.com/user-attachments/assets/52a7ec84-a9b9-4242-8116-41e87dc9ef2f"" />
+
+### Steps to reproduce
+
+1. Install prestashop 8 localy
+2. Execute prestashop 8 with php 8.3.1
+3. Bug at the end of install
+
+### PrestaShop version(s) where the bug happened
+
+prestashop 8 with php 8.3.1
+
+### How you installed PrestaShop
+
+locally with mamp
+
+### PHP version(s) where the bug happened
+
+8.3.1
+
+### If your bug is related to a module, specify its name and its version
+
+_No response_
+
+### Your company or customer's name goes here (if applicable).
+
+_No response_","Bug, New"
+PrestaShop/PrestaShop,Bad badge when update to 8.2.2,"### Prerequisites
+
+- [x] I understand and accept the project's [code of conduct](https://github.com/PrestaShop/PrestaShop/blob/develop/CODE_OF_CONDUCT.md).
+- [x] I have already [searched in existing issues](https://github.com/PrestaShop/PrestaShop/issues?q=is%3Aissue+label%3ABug) and found no previous report of this bug.
+
+### Describe the bug and add attachments
+
+An incorrect badge is displayed for update 8.2.2
+
+See screenshot
+
+<img width=""2246"" height=""512"" alt=""Image"" src=""https://github.com/user-attachments/assets/b5634ea4-fd6c-4ffe-9f3b-1e3f22dc25c0"" />
+
+### Expected behavior
+
+Good badge
+
+### Steps to reproduce
+
+Try update to 8.2.2 
+
+### PrestaShop version(s) where the bug happened
+
+module version 7.3
+
+### How you installed PrestaShop
+
+_No response_
+
+### PHP version(s) where the bug happened
+
+_No response_
+
+### If your bug is related to a module, specify its name and its version
+
+autoupgrade
+
+### Your company or customer's name goes here (if applicable).
+
+_No response_","Bug, New"
+PrestaShop/PrestaShop,probleme-with-php-8.2-in Prestashop-8.2,"### Prerequisites
+
+- [x] I understand and accept the project's [code of conduct](https://github.com/PrestaShop/PrestaShop/blob/develop/CODE_OF_CONDUCT.md).
+- [x] I have already [searched in existing issues](https://github.com/PrestaShop/PrestaShop/issues?q=is%3Aissue+label%3ABug) and found no previous report of this bug.
+
+### Describe the bug and add attachments
+
+I upgraded my project from version 8.1 to 8.2, and I'm in an environment that uses PHP 8.2, but my PrestaShop 8.2 website no longer works, and I no longer have access to the administration interface.
+
+<!-- Failed to upload ""WhatsApp Image 2025-07-31 à 12.42.42_d0b68e91.jpg"" -->
+
+### Expected behavior
+
+In principle, given that PrestaShop 8.2 supports PHP 8.2, my website should display correctly, and I should have access to the back office without any issues.
+
+### Steps to reproduce
+
+Access to the website
+
+Connection / Login
+
+Authentication
+
+White page / Blank page
+
+### PrestaShop version(s) where the bug happened
+
+8.2
+
+### How you installed PrestaShop
+
+download package
+
+### PHP version(s) where the bug happened
+
+8.2
+
+### If your bug is related to a module, specify its name and its version
+
+_No response_
+
+### Your company or customer's name goes here (if applicable).
+
+_No response_","Bug, New"
+PrestaShop/PrestaShop,Prestashop Minimal product quantity,"### Prerequisites
+
+- [x] I understand and accept the project's [code of conduct](https://github.com/PrestaShop/PrestaShop/blob/develop/CODE_OF_CONDUCT.md).
+- [x] I have already [searched in existing issues](https://github.com/PrestaShop/PrestaShop/issues?q=is%3Aissue+label%3ABug) and found no previous report of this bug.
+
+---
+
+### Describe the bug and add attachments
+
+> ❗️Note: This issue occurs **even if the theme is not the Classic theme**.  
+> However, the bug is **not caused by the theme itself**, but by the logic of how ""Add to cart"" is handled in product listings when combinations and minimal quantity are involved.
+
+When a product has **combinations** and a **minimal purchase quantity** (e.g. 3), the **product listings view** (category pages, home, featured products, etc.) always assumes a quantity of 1.
+
+If the user clicks ""Add to cart"" from the product list/card (not from the product detail page), nothing happens, and there is no error shown.  
+This results in broken UX and lost sales opportunities.
+
+📸 Screenshots:
+
+<img width=""487"" height=""600"" alt=""Product card showing quantity 1"" src=""https://github.com/user-attachments/assets/447ad7de-8288-4fd3-98b9-bd1ad595c4d6"" />
+
+<img width=""705"" height=""344"" alt=""No feedback after clicking Add to cart"" src=""https://github.com/user-attachments/assets/512286d4-9565-4e51-ab61-c81f8e01d836"" />
+
+---
+
+### Expected behavior
+
+The product card should either:
+
+- Display the correct minimal quantity, or
+- Redirect the user to the product page to select a valid combination.
+
+If ""Add to cart"" is available directly in the listing, it should respect the minimal quantity set for the default combination.
+
+A proper error message should appear if the quantity is too low.
+
+---
+
+### Steps to reproduce
+
+1. Create a product with combinations (e.g. Size: S, M, L).
+2. Set the default combination’s minimal quantity to 3.
+3. Place this product in a category or home listing.
+4. From the product listing, click ""Add to cart"" without visiting the product page.
+5. The product is not added, and no message is shown.
+
+---
+
+### PrestaShop version(s) where the bug happened
+
+8.1.2
+
+---
+
+### How you installed PrestaShop
+
+_No response_
+
+---
+
+### PHP version(s) where the bug happened
+
+_No response_
+
+---
+
+### If your bug is related to a module, specify its name and its version
+
+_No response_
+
+---
+
+### Additional context
+
+We are aware that combination handling in product listings is limited by design, but when minimal quantity is enforced and ""Add to cart"" is visible, the system should not fail silently.  
+A safe fallback would be to disable direct cart actions for combination products with constraints, or force redirect to the product page when required.
+
+The current behavior can mislead the customer into thinking the site is broken.
+
+Would you accept a contribution (PR) that disables or redirects the button in these cases?
+","Bug, New"
+PrestaShop/PrestaShop,Wall of fame - BO not iso with figma,"### Prerequisites
+
+- [x] I understand and accept the project's [code of conduct](https://github.com/PrestaShop/PrestaShop/blob/develop/CODE_OF_CONDUCT.md).
+- [x] I have already [searched in existing issues](https://github.com/PrestaShop/PrestaShop/issues?q=is%3Aissue+label%3ABug) and found no previous report of this bug.
+
+### Describe the bug and add attachments
+
+Back to PR https://github.com/PrestaShop/ps_distributionapiclient/pull/46
+I tested the issue https://github.com/PrestaShop/PrestaShop/issues/38832
+But however it's not iso with figma we don't have pagination but caroussels but also we don't have “@” for names on github and the ""View all"" 
+
+
+Figma: 
+<img width=""944"" height=""383"" alt=""Capture d’écran 2025-07-29 à 15 21 50"" src=""https://github.com/user-attachments/assets/5bbe9c62-76f5-4311-89ad-5b5886cc5536"" />
+
+BO:
+<img width=""1625"" height=""541"" alt=""Capture d’écran 2025-07-29 à 15 12 52"" src=""https://github.com/user-attachments/assets/aab52d2c-af39-4d2a-830e-2dcf749af2c6"" />
+
+For the issue: https://github.com/PrestaShop/PrestaShop/issues/38830
+We don't have the ""action"" column 
+We have ""Merged Pull Requests"" instead of ""Contribs""
+
+Figma: 
+
+<img width=""829"" height=""789"" alt=""Image"" src=""https://github.com/user-attachments/assets/e5fb247c-c1fa-43ef-9f86-8c9f6c68d051"" />
+
+BO:
+
+<img width=""673"" height=""601"" alt=""Image"" src=""https://github.com/user-attachments/assets/f8bf1dec-5496-4fe3-926e-fad918bf81cd"" />
+
+### Expected behavior
+
+_No response_
+
+### Steps to reproduce
+
+1. Go to BO
+2. Click On ""Wall of Fame""
+
+### PrestaShop version(s) where the bug happened
+
+9.1.0
+
+### How you installed PrestaShop
+
+_No response_
+
+### PHP version(s) where the bug happened
+
+8.1
+
+### If your bug is related to a module, specify its name and its version
+
+_No response_
+
+### Your company or customer's name goes here (if applicable).
+
+_No response_","Bug, New"
+shopware/platform,SwagCommercial cannot be activated after updating to 7.1.1,"### Shopware Version
+
+6.7.1.0
+
+### Affected area / extension
+
+Extension:Commercial
+
+### Actual behaviour
+
+Shopware Commercial Plugin (SwagCommercial) cannot be activated after plugin update to 7.1.1
+
+Error: 
+
+``
+Uncaught PHP Exception Symfony\Component\DependencyInjection\Exception\ServiceNotFoundException: ""The service ""Shopware\Commercial\TextGenerator\Domain\Product\DescriptionGenerator"" has a dependency on a non-existent service ""Shopware\Core\Framework\DataAbstractionLayer\Search\SearchConfigLoader"". Did you mean one of these: ""Shopware\Core\Framework\DataAbstractionLayer\EntityGenerator"", ""Shopware\Core\Framework\DataAbstractionLayer\Dbal\SchemaBuilder"", ""Shopware\Core\Framework\DataAbstractionLayer\MigrationFileRenderer"", ""Shopware\Core\Framework\DataAbstractionLayer\MigrationQueryGenerator"", ""Shopware\Core\Framework\DataAbstractionLayer\Cache\EntityCacheKeyGenerator"", ""Shopware\Core\Framework\DataAbstractionLayer\Dbal\JoinGroupBuilder"", ""Shopware\Core\Framework\DataAbstractionLayer\Dbal\EntityHydrator"", ""Shopware\Core\Framework\DataAbstractionLayer\DefinitionValidator"", ""Shopware\Core\Framework\DataAbstractionLayer\Search\Term\Tokenizer"", ""Shopware\Core\Framework\DataAbstractionLayer\Search\Term\SearchTermInterpreter"", ""Shopware\Core\Framework\DataAbstractionLayer\Search\Term\EntityScoreQueryBuilder"", ""Shopware\Core\Framework\DataAbstractionLayer\Search\CriteriaArrayConverter"", ""Shopware\Core\Framework\DataAbstractionLayer\Search\RequestCriteriaBuilder"", ""Shopware\Core\Framework\DataAbstractionLayer\Search\ApiCriteriaValidator"", ""Shopware\Core\Framework\DataAbstractionLayer\Search\Parser\AggregationParser"", ""Shopware\Core\Framework\DataAbstractionLayer\Read\EntityReaderInterface"", ""Shopware\Core\Framework\DataAbstractionLayer\Dbal\CriteriaFieldsResolver"", ""Shopware\Core\Framework\DataAbstractionLayer\Dbal\CriteriaQueryBuilder"", ""Shopware\Core\Framework\DataAbstractionLayer\Write\EntityWriter"", ""Shopware\Core\Framework\DataAbstractionLayer\Write\WriteCommandExtractor"", ""Shopware\Core\Framework\DataAbstractionLayer\Search\Parser\SqlQueryParser"", ""Shopware\Core\Framework\DataAbstractionLayer\Dbal\EntityForeignKeyResolver"", ""Shopware\Core\Framework\DataAbstractionLayer\Version\VersionDefinition"", ""Shopware\Core\Framework\DataAbstractionLayer\Command\RefreshIndexCommand"", ""Shopware\Core\Framework\DataAbstractionLayer\VersionManager"", ""Shopware\Core\Framework\DataAbstractionLayer\DefinitionInstanceRegistry"", ""Shopware\Core\Framework\DataAbstractionLayer\TechnicalNameExceptionHandler"", ""Shopware\Core\Framework\DataAbstractionLayer\Indexing\InheritanceUpdater"", ""Shopware\Core\Framework\DataAbstractionLayer\Indexing\ChildCountUpdater"", ""Shopware\Core\Framework\DataAbstractionLayer\Indexing\TreeUpdater"", ""Shopware\Core\Framework\DataAbstractionLayer\Search\Term\Filter\TokenFilter"", ""Shopware\Core\Framework\DataAbstractionLayer\Search\EntitySearcherInterface"", ""Shopware\Core\Framework\DataAbstractionLayer\Search\EntityAggregatorInterface""?"" at CheckExceptionOnInvalidReferenceBehaviorPass.php line 116 {""exception"":""[object] (Symfony\\Component\\DependencyInjection\\Exception\\ServiceNotFoundException(code: 0): The service \""Shopware\\Commercial\\TextGenerator\\Domain\\Product\\DescriptionGenerator\"" has a dependency on a non-existent service \""Shopware\\Core\\Framework\\DataAbstractionLayer\\Search\\SearchConfigLoader\"". Did you mean one of these: \""Shopware\\Core\\Framework\\DataAbstractionLayer\\EntityGenerator\"", \""Shopware\\Core\\Framework\\DataAbstractionLayer\\Dbal\\SchemaBuilder\"", \""Shopware\\Core\\Framework\\DataAbstractionLayer\\MigrationFileRenderer\"", \""Shopware\\Core\\Framework\\DataAbstractionLayer\\MigrationQueryGenerator\"", \""Shopware\\Core\\Framework\\DataAbstractionLayer\\Cache\\EntityCacheKeyGenerator\"", \""Shopware\\Core\\Framework\\DataAbstractionLayer\\Dbal\\JoinGroupBuilder\"", \""Shopware\\Core\\Framework\\DataAbstractionLayer\\Dbal\\EntityHydrator\"", \""Shopware\\Core\\Framework\\DataAbstractionLayer\\DefinitionValidator\"", \""Shopware\\Core\\Framework\\DataAbstractionLayer\\Search\\Term\\Tokenizer\"", \""Shopware\\Core\\Framework\\DataAbstractionLayer\\Search\\Term\\SearchTermInterpreter\"", \""Shopware\\Core\\Framework\\DataAbstractionLayer\\Search\\Term\\EntityScoreQueryBuilder\"", \""Shopware\\Core\\Framework\\DataAbstractionLayer\\Search\\CriteriaArrayConverter\"", \""Shopware\\Core\\Framework\\DataAbstractionLayer\\Search\\RequestCriteriaBuilder\"", \""Shopware\\Core\\Framework\\DataAbstractionLayer\\Search\\ApiCriteriaValidator\"", \""Shopware\\Core\\Framework\\DataAbstractionLayer\\Search\\Parser\\AggregationParser\"", \""Shopware\\Core\\Framework\\DataAbstractionLayer\\Read\\EntityReaderInterface\"", \""Shopware\\Core\\Framework\\DataAbstractionLayer\\Dbal\\CriteriaFieldsResolver\"", \""Shopware\\Core\\Framework\\DataAbstractionLayer\\Dbal\\CriteriaQueryBuilder\"", \""Shopware\\Core\\Framework\\DataAbstractionLayer\\Write\\EntityWriter\"", \""Shopware\\Core\\Framework\\DataAbstractionLayer\\Write\\WriteCommandExtractor\"", \""Shopware\\Core\\Framework\\DataAbstractionLayer\\Search\\Parser\\SqlQueryParser\"", \""Shopware\\Core\\Framework\\DataAbstractionLayer\\Dbal\\EntityForeignKeyResolver\"", \""Shopware\\Core\\Framework\\DataAbstractionLayer\\Version\\VersionDefinition\"", \""Shopware\\Core\\Framework\\DataAbstractionLayer\\Command\\RefreshIndexCommand\"", \""Shopware\\Core\\Framework\\DataAbstractionLayer\\VersionManager\"", \""Shopware\\Core\\Framework\\DataAbstractionLayer\\DefinitionInstanceRegistry\"", \""Shopware\\Core\\Framework\\DataAbstractionLayer\\TechnicalNameExceptionHandler\"", \""Shopware\\Core\\Framework\\DataAbstractionLayer\\Indexing\\InheritanceUpdater\"", \""Shopware\\Core\\Framework\\DataAbstractionLayer\\Indexing\\ChildCountUpdater\"", \""Shopware\\Core\\Framework\\DataAbstractionLayer\\Indexing\\TreeUpdater\"", \""Shopware\\Core\\Framework\\DataAbstractionLayer\\Search\\Term\\Filter\\TokenFilter\"", \""Shopware\\Core\\Framework\\DataAbstractionLayer\\Search\\EntitySearcherInterface\"", \""Shopware\\Core\\Framework\\DataAbstractionLayer\\Search\\EntityAggregatorInterface\""? at /home/tkassner/files/sw6710/vendor/symfony/dependency-injection/Compiler/CheckExceptionOnInvalidReferenceBehaviorPass.php:116)""} []
+``
+
+### Expected behaviour
+
+Shopware Commercial Plugin (SwagCommercial) can be activated without any problems/errors after updating the plugin to 7.1.1.
+
+### How to reproduce
+
+1. Deactivate Shopware Commercial Plugin 7.1.0 (SwagCommercial)
+2. Update Plugin in a Stable 6.7.0.1 from 7.1.0 to 7.1.1
+3. Activate Shopware Commercial Plugin 7.1.1 (SwagCommercial)
+4. Error (see screens)
+
+<img width=""962"" height=""1724"" alt=""Image"" src=""https://github.com/user-attachments/assets/d1acd8c4-e73b-47a9-87e0-24ff8e8c4a44"" />
+<img width=""1895"" height=""898"" alt=""Image"" src=""https://github.com/user-attachments/assets/02ada475-79b0-4d00-9f5e-f635814b44c3"" />
+
+
+### Definition of Done
+
+- [ ] An automated test covers the fix.
+- [ ] Integration/E2E testing in staging is done.
+- [ ] Changelog markdown file created or updated in /changelog/_unreleased directory.
+- [ ] Developer documentation written/updated.
+- [ ] End user and/or developer documentation written or updated with clarification.
+- [ ] Regression test created to ensure bug does not reappear, and automated regression tests pass.
+- [ ] Code changes resolve the reported bug without introducing new issues.","component/core, extension/Commercial, priority/critical, domain/framework, customer-support"
+shopware/platform,Media preview file name not centered,"### Shopware Version
+
+6.7.1
+
+### Affected area / extension
+
+Platform(Default)
+
+### Actual behaviour
+
+The file name next to the media file selection preview isn't centered.
+
+<img width=""291"" height=""93"" alt=""Image"" src=""https://github.com/user-attachments/assets/66056b19-f71e-4843-a004-0f8977a1e858"" />
+
+### Expected behaviour
+
+The text should be centered on the y-axis. 
+
+### How to reproduce
+
+Go to any media file selection field with preview, e.g. Admin > Settings > Documents > invoice > company logo and select an image.
+
+### Definition of Done
+
+- [ ] An automated test covers the fix.
+- [ ] Integration/E2E testing in staging is done.
+- [ ] Changelog markdown file created or updated in /changelog/_unreleased directory.
+- [ ] Developer documentation written/updated.
+- [ ] End user and/or developer documentation written or updated with clarification.
+- [ ] Regression test created to ensure bug does not reappear, and automated regression tests pass.
+- [ ] Code changes resolve the reported bug without introducing new issues.","Platform(Default), domain/crm-after-sales"
+shopware/platform,Product Description overwriting HTML Code,"### Shopware Version
+
+6.7.1.0
+
+### Affected area / extension
+
+Extension:Commercial
+
+### Actual behaviour
+
+When writing HTML with inline CSS in the product description using the HTML mode, it's possible to create well-formatted and styled layouts.
+
+However, as soon as you switch back to the Standard Editor and make even a small change (e.g. editing a single word), the editor automatically rewrites and strips parts of the custom HTML/CSS code.
+
+Expected Behavior:
+The WYSIWYG editor should preserve valid HTML/CSS code written manually in HTML mode, even after switching to or editing within the standard visual editor.
+
+Actual Behavior:
+Switching to the Standard Editor and editing content results in:
+
+Inline styles being removed or altered
+
+Custom HTML structure (e.g. <table>, <colgroup>, or styled <td>) being replaced or simplified
+
+Loss of layout integrity
+
+Steps to Reproduce:
+
+Open the product description in HTML mode.
+
+Add a styled HTML block with inline CSS (e.g. table with cell padding or background colors).
+
+Save and switch to the Standard Editor.
+
+Make a small change, like editing a word.
+
+Save again and reopen in HTML mode → custom styles are gone.
+
+Impact:
+This behavior makes it difficult or impossible to maintain advanced HTML-based layouts in product descriptions.
+
+### Expected behaviour
+
+If i switch Between HTML to standard Editor side and i write text it shouldt overwrite anything.
+
+### How to reproduce
+
+make a table in the Editor. Go to the html code Editor and change the Table with css. Switch to the standard editor sight and change a word. Save and reload the Website.
+
+### Definition of Done
+
+- [ ] An automated test covers the fix.
+- [ ] Integration/E2E testing in staging is done.
+- [ ] Changelog markdown file created or updated in /changelog/_unreleased directory.
+- [ ] Developer documentation written/updated.
+- [ ] End user and/or developer documentation written or updated with clarification.
+- [ ] Regression test created to ensure bug does not reappear, and automated regression tests pass.
+- [ ] Code changes resolve the reported bug without introducing new issues.","component/administration, extension/Commercial, priority/high, domain/framework"
+shopware/platform,Thumbnails not generated,"### Shopware Version
+
+trunk
+
+### Affected area / extension
+
+Platform(Default)
+
+### Actual behaviour
+
+no thumbnails generated.
+
+just trunk fails:
+https://github.com/FriendsOfShopware/FroshPlatformThumbnailProcessor/actions/runs/16626823401/job/47045458713
+
+see test: https://github.com/FriendsOfShopware/FroshPlatformThumbnailProcessor/blob/e8e97a3897ca0ea101e40ae96239a05627781ad2/tests/integration/MediaUrlTest.php#L98
+
+How should we create the thumbnails [after this change](https://github.com/shopware/shopware/commit/de8605468da3edb574d9b2e2129ae2920865f79b)?
+
+
+### Expected behaviour
+
+should have thumbnails generated
+
+### How to reproduce
+
+(see test)
+ 
+- use NamedMimePngEtxPngWithFolder of mediaFixtures
+- set folder
+- generate thumbnails
+- runWorker
+- have no thumbnails
+
+### Definition of Done
+
+- [ ] An automated test covers the fix.
+- [ ] Integration/E2E testing in staging is done.
+- [ ] Changelog markdown file created or updated in /changelog/_unreleased directory.
+- [ ] Developer documentation written/updated.
+- [ ] End user and/or developer documentation written or updated with clarification.
+- [ ] Regression test created to ensure bug does not reappear, and automated regression tests pass.
+- [ ] Code changes resolve the reported bug without introducing new issues.","priority/high, Platform(Default), domain/discovery"
+shopware/platform,Squished line item document text,"### Shopware Version
+
+6.7.1
+
+### Affected area / extension
+
+Platform(Default)
+
+### Actual behaviour
+
+The line item list in an document is currently squished to the left side of the document.
+
+[Invoice_with_error.pdf](https://github.com/user-attachments/files/21502946/Invoice_with_error.pdf)
+
+### Expected behaviour
+
+The listing should be dsplayed over the full width.
+
+[Invoice_without_error.pdf](https://github.com/user-attachments/files/21502953/Invoice_without_error.pdf)
+
+### How to reproduce
+
+Create a standard invoice document.
+
+### Definition of Done
+
+- [ ] An automated test covers the fix.
+- [ ] Integration/E2E testing in staging is done.
+- [ ] Changelog markdown file created or updated in /changelog/_unreleased directory.
+- [ ] Developer documentation written/updated.
+- [ ] End user and/or developer documentation written or updated with clarification.
+- [x] Regression test created to ensure bug does not reappear, and automated regression tests pass.
+- [ ] Code changes resolve the reported bug without introducing new issues.","component/documents, Platform(Default), domain/crm-after-sales"
+shopware/platform,Cloud: Unable to create a Google Shopping saleschannel,"### Shopware Version
+
+cloud
+
+### Affected area / extension
+
+Platform(Default)
+
+### Actual behaviour
+
+No more Google Shopping sales channels can be created in the cloud. Other sales channels are available. The window remains empty.
+
+<img width=""912"" height=""575"" alt=""Image"" src=""https://github.com/user-attachments/assets/b31d8ea5-a2e9-4e39-95c4-83723c84b423"" />
+
+### Expected behaviour
+
+.
+
+### How to reproduce
+
+Create a Google Shopping sales channel in the cloud shop :)
+
+### Definition of Done
+
+- [ ] An automated test covers the fix.
+- [ ] Integration/E2E testing in staging is done.
+- [ ] Changelog markdown file created or updated in /changelog/_unreleased directory.
+- [ ] Developer documentation written/updated.
+- [ ] End user and/or developer documentation written or updated with clarification.
+- [ ] Regression test created to ensure bug does not reappear, and automated regression tests pass.
+- [ ] Code changes resolve the reported bug without introducing new issues.","extension/Social-Shopping, priority/critical, Platform(Default), domain/discovery, customer-support"
+shopware/shopware,SwagCommercial cannot be activated after updating to 7.1.1,"### Shopware Version
+
+6.7.1.0
+
+### Affected area / extension
+
+Extension:Commercial
+
+### Actual behaviour
+
+Shopware Commercial Plugin (SwagCommercial) cannot be activated after plugin update to 7.1.1
+
+Error: 
+
+``
+Uncaught PHP Exception Symfony\Component\DependencyInjection\Exception\ServiceNotFoundException: ""The service ""Shopware\Commercial\TextGenerator\Domain\Product\DescriptionGenerator"" has a dependency on a non-existent service ""Shopware\Core\Framework\DataAbstractionLayer\Search\SearchConfigLoader"". Did you mean one of these: ""Shopware\Core\Framework\DataAbstractionLayer\EntityGenerator"", ""Shopware\Core\Framework\DataAbstractionLayer\Dbal\SchemaBuilder"", ""Shopware\Core\Framework\DataAbstractionLayer\MigrationFileRenderer"", ""Shopware\Core\Framework\DataAbstractionLayer\MigrationQueryGenerator"", ""Shopware\Core\Framework\DataAbstractionLayer\Cache\EntityCacheKeyGenerator"", ""Shopware\Core\Framework\DataAbstractionLayer\Dbal\JoinGroupBuilder"", ""Shopware\Core\Framework\DataAbstractionLayer\Dbal\EntityHydrator"", ""Shopware\Core\Framework\DataAbstractionLayer\DefinitionValidator"", ""Shopware\Core\Framework\DataAbstractionLayer\Search\Term\Tokenizer"", ""Shopware\Core\Framework\DataAbstractionLayer\Search\Term\SearchTermInterpreter"", ""Shopware\Core\Framework\DataAbstractionLayer\Search\Term\EntityScoreQueryBuilder"", ""Shopware\Core\Framework\DataAbstractionLayer\Search\CriteriaArrayConverter"", ""Shopware\Core\Framework\DataAbstractionLayer\Search\RequestCriteriaBuilder"", ""Shopware\Core\Framework\DataAbstractionLayer\Search\ApiCriteriaValidator"", ""Shopware\Core\Framework\DataAbstractionLayer\Search\Parser\AggregationParser"", ""Shopware\Core\Framework\DataAbstractionLayer\Read\EntityReaderInterface"", ""Shopware\Core\Framework\DataAbstractionLayer\Dbal\CriteriaFieldsResolver"", ""Shopware\Core\Framework\DataAbstractionLayer\Dbal\CriteriaQueryBuilder"", ""Shopware\Core\Framework\DataAbstractionLayer\Write\EntityWriter"", ""Shopware\Core\Framework\DataAbstractionLayer\Write\WriteCommandExtractor"", ""Shopware\Core\Framework\DataAbstractionLayer\Search\Parser\SqlQueryParser"", ""Shopware\Core\Framework\DataAbstractionLayer\Dbal\EntityForeignKeyResolver"", ""Shopware\Core\Framework\DataAbstractionLayer\Version\VersionDefinition"", ""Shopware\Core\Framework\DataAbstractionLayer\Command\RefreshIndexCommand"", ""Shopware\Core\Framework\DataAbstractionLayer\VersionManager"", ""Shopware\Core\Framework\DataAbstractionLayer\DefinitionInstanceRegistry"", ""Shopware\Core\Framework\DataAbstractionLayer\TechnicalNameExceptionHandler"", ""Shopware\Core\Framework\DataAbstractionLayer\Indexing\InheritanceUpdater"", ""Shopware\Core\Framework\DataAbstractionLayer\Indexing\ChildCountUpdater"", ""Shopware\Core\Framework\DataAbstractionLayer\Indexing\TreeUpdater"", ""Shopware\Core\Framework\DataAbstractionLayer\Search\Term\Filter\TokenFilter"", ""Shopware\Core\Framework\DataAbstractionLayer\Search\EntitySearcherInterface"", ""Shopware\Core\Framework\DataAbstractionLayer\Search\EntityAggregatorInterface""?"" at CheckExceptionOnInvalidReferenceBehaviorPass.php line 116 {""exception"":""[object] (Symfony\\Component\\DependencyInjection\\Exception\\ServiceNotFoundException(code: 0): The service \""Shopware\\Commercial\\TextGenerator\\Domain\\Product\\DescriptionGenerator\"" has a dependency on a non-existent service \""Shopware\\Core\\Framework\\DataAbstractionLayer\\Search\\SearchConfigLoader\"". Did you mean one of these: \""Shopware\\Core\\Framework\\DataAbstractionLayer\\EntityGenerator\"", \""Shopware\\Core\\Framework\\DataAbstractionLayer\\Dbal\\SchemaBuilder\"", \""Shopware\\Core\\Framework\\DataAbstractionLayer\\MigrationFileRenderer\"", \""Shopware\\Core\\Framework\\DataAbstractionLayer\\MigrationQueryGenerator\"", \""Shopware\\Core\\Framework\\DataAbstractionLayer\\Cache\\EntityCacheKeyGenerator\"", \""Shopware\\Core\\Framework\\DataAbstractionLayer\\Dbal\\JoinGroupBuilder\"", \""Shopware\\Core\\Framework\\DataAbstractionLayer\\Dbal\\EntityHydrator\"", \""Shopware\\Core\\Framework\\DataAbstractionLayer\\DefinitionValidator\"", \""Shopware\\Core\\Framework\\DataAbstractionLayer\\Search\\Term\\Tokenizer\"", \""Shopware\\Core\\Framework\\DataAbstractionLayer\\Search\\Term\\SearchTermInterpreter\"", \""Shopware\\Core\\Framework\\DataAbstractionLayer\\Search\\Term\\EntityScoreQueryBuilder\"", \""Shopware\\Core\\Framework\\DataAbstractionLayer\\Search\\CriteriaArrayConverter\"", \""Shopware\\Core\\Framework\\DataAbstractionLayer\\Search\\RequestCriteriaBuilder\"", \""Shopware\\Core\\Framework\\DataAbstractionLayer\\Search\\ApiCriteriaValidator\"", \""Shopware\\Core\\Framework\\DataAbstractionLayer\\Search\\Parser\\AggregationParser\"", \""Shopware\\Core\\Framework\\DataAbstractionLayer\\Read\\EntityReaderInterface\"", \""Shopware\\Core\\Framework\\DataAbstractionLayer\\Dbal\\CriteriaFieldsResolver\"", \""Shopware\\Core\\Framework\\DataAbstractionLayer\\Dbal\\CriteriaQueryBuilder\"", \""Shopware\\Core\\Framework\\DataAbstractionLayer\\Write\\EntityWriter\"", \""Shopware\\Core\\Framework\\DataAbstractionLayer\\Write\\WriteCommandExtractor\"", \""Shopware\\Core\\Framework\\DataAbstractionLayer\\Search\\Parser\\SqlQueryParser\"", \""Shopware\\Core\\Framework\\DataAbstractionLayer\\Dbal\\EntityForeignKeyResolver\"", \""Shopware\\Core\\Framework\\DataAbstractionLayer\\Version\\VersionDefinition\"", \""Shopware\\Core\\Framework\\DataAbstractionLayer\\Command\\RefreshIndexCommand\"", \""Shopware\\Core\\Framework\\DataAbstractionLayer\\VersionManager\"", \""Shopware\\Core\\Framework\\DataAbstractionLayer\\DefinitionInstanceRegistry\"", \""Shopware\\Core\\Framework\\DataAbstractionLayer\\TechnicalNameExceptionHandler\"", \""Shopware\\Core\\Framework\\DataAbstractionLayer\\Indexing\\InheritanceUpdater\"", \""Shopware\\Core\\Framework\\DataAbstractionLayer\\Indexing\\ChildCountUpdater\"", \""Shopware\\Core\\Framework\\DataAbstractionLayer\\Indexing\\TreeUpdater\"", \""Shopware\\Core\\Framework\\DataAbstractionLayer\\Search\\Term\\Filter\\TokenFilter\"", \""Shopware\\Core\\Framework\\DataAbstractionLayer\\Search\\EntitySearcherInterface\"", \""Shopware\\Core\\Framework\\DataAbstractionLayer\\Search\\EntityAggregatorInterface\""? at /home/tkassner/files/sw6710/vendor/symfony/dependency-injection/Compiler/CheckExceptionOnInvalidReferenceBehaviorPass.php:116)""} []
+``
+
+### Expected behaviour
+
+Shopware Commercial Plugin (SwagCommercial) can be activated without any problems/errors after updating the plugin to 7.1.1.
+
+### How to reproduce
+
+1. Deactivate Shopware Commercial Plugin 7.1.0 (SwagCommercial)
+2. Update Plugin in a Stable 6.7.0.1 from 7.1.0 to 7.1.1
+3. Activate Shopware Commercial Plugin 7.1.1 (SwagCommercial)
+4. Error (see screens)
+
+<img width=""962"" height=""1724"" alt=""Image"" src=""https://github.com/user-attachments/assets/d1acd8c4-e73b-47a9-87e0-24ff8e8c4a44"" />
+<img width=""1895"" height=""898"" alt=""Image"" src=""https://github.com/user-attachments/assets/02ada475-79b0-4d00-9f5e-f635814b44c3"" />
+
+
+### Definition of Done
+
+- [ ] An automated test covers the fix.
+- [ ] Integration/E2E testing in staging is done.
+- [ ] Changelog markdown file created or updated in /changelog/_unreleased directory.
+- [ ] Developer documentation written/updated.
+- [ ] End user and/or developer documentation written or updated with clarification.
+- [ ] Regression test created to ensure bug does not reappear, and automated regression tests pass.
+- [ ] Code changes resolve the reported bug without introducing new issues.","component/core, extension/Commercial, priority/critical, domain/framework, customer-support"
+shopware/shopware,Media preview file name not centered,"### Shopware Version
+
+6.7.1
+
+### Affected area / extension
+
+Platform(Default)
+
+### Actual behaviour
+
+The file name next to the media file selection preview isn't centered.
+
+<img width=""291"" height=""93"" alt=""Image"" src=""https://github.com/user-attachments/assets/66056b19-f71e-4843-a004-0f8977a1e858"" />
+
+### Expected behaviour
+
+The text should be centered on the y-axis. 
+
+### How to reproduce
+
+Go to any media file selection field with preview, e.g. Admin > Settings > Documents > invoice > company logo and select an image.
+
+### Definition of Done
+
+- [ ] An automated test covers the fix.
+- [ ] Integration/E2E testing in staging is done.
+- [ ] Changelog markdown file created or updated in /changelog/_unreleased directory.
+- [ ] Developer documentation written/updated.
+- [ ] End user and/or developer documentation written or updated with clarification.
+- [ ] Regression test created to ensure bug does not reappear, and automated regression tests pass.
+- [ ] Code changes resolve the reported bug without introducing new issues.","Platform(Default), domain/crm-after-sales"
+shopware/shopware,Product Description overwriting HTML Code,"### Shopware Version
+
+6.7.1.0
+
+### Affected area / extension
+
+Extension:Commercial
+
+### Actual behaviour
+
+When writing HTML with inline CSS in the product description using the HTML mode, it's possible to create well-formatted and styled layouts.
+
+However, as soon as you switch back to the Standard Editor and make even a small change (e.g. editing a single word), the editor automatically rewrites and strips parts of the custom HTML/CSS code.
+
+Expected Behavior:
+The WYSIWYG editor should preserve valid HTML/CSS code written manually in HTML mode, even after switching to or editing within the standard visual editor.
+
+Actual Behavior:
+Switching to the Standard Editor and editing content results in:
+
+Inline styles being removed or altered
+
+Custom HTML structure (e.g. <table>, <colgroup>, or styled <td>) being replaced or simplified
+
+Loss of layout integrity
+
+Steps to Reproduce:
+
+Open the product description in HTML mode.
+
+Add a styled HTML block with inline CSS (e.g. table with cell padding or background colors).
+
+Save and switch to the Standard Editor.
+
+Make a small change, like editing a word.
+
+Save again and reopen in HTML mode → custom styles are gone.
+
+Impact:
+This behavior makes it difficult or impossible to maintain advanced HTML-based layouts in product descriptions.
+
+### Expected behaviour
+
+If i switch Between HTML to standard Editor side and i write text it shouldt overwrite anything.
+
+### How to reproduce
+
+make a table in the Editor. Go to the html code Editor and change the Table with css. Switch to the standard editor sight and change a word. Save and reload the Website.
+
+### Definition of Done
+
+- [ ] An automated test covers the fix.
+- [ ] Integration/E2E testing in staging is done.
+- [ ] Changelog markdown file created or updated in /changelog/_unreleased directory.
+- [ ] Developer documentation written/updated.
+- [ ] End user and/or developer documentation written or updated with clarification.
+- [ ] Regression test created to ensure bug does not reappear, and automated regression tests pass.
+- [ ] Code changes resolve the reported bug without introducing new issues.","component/administration, extension/Commercial, priority/high, domain/framework"
+shopware/shopware,Thumbnails not generated,"### Shopware Version
+
+trunk
+
+### Affected area / extension
+
+Platform(Default)
+
+### Actual behaviour
+
+no thumbnails generated.
+
+just trunk fails:
+https://github.com/FriendsOfShopware/FroshPlatformThumbnailProcessor/actions/runs/16626823401/job/47045458713
+
+see test: https://github.com/FriendsOfShopware/FroshPlatformThumbnailProcessor/blob/e8e97a3897ca0ea101e40ae96239a05627781ad2/tests/integration/MediaUrlTest.php#L98
+
+How should we create the thumbnails [after this change](https://github.com/shopware/shopware/commit/de8605468da3edb574d9b2e2129ae2920865f79b)?
+
+
+### Expected behaviour
+
+should have thumbnails generated
+
+### How to reproduce
+
+(see test)
+ 
+- use NamedMimePngEtxPngWithFolder of mediaFixtures
+- set folder
+- generate thumbnails
+- runWorker
+- have no thumbnails
+
+### Definition of Done
+
+- [ ] An automated test covers the fix.
+- [ ] Integration/E2E testing in staging is done.
+- [ ] Changelog markdown file created or updated in /changelog/_unreleased directory.
+- [ ] Developer documentation written/updated.
+- [ ] End user and/or developer documentation written or updated with clarification.
+- [ ] Regression test created to ensure bug does not reappear, and automated regression tests pass.
+- [ ] Code changes resolve the reported bug without introducing new issues.","priority/high, Platform(Default), domain/discovery"
+shopware/shopware,Squished line item document text,"### Shopware Version
+
+6.7.1
+
+### Affected area / extension
+
+Platform(Default)
+
+### Actual behaviour
+
+The line item list in an document is currently squished to the left side of the document.
+
+[Invoice_with_error.pdf](https://github.com/user-attachments/files/21502946/Invoice_with_error.pdf)
+
+### Expected behaviour
+
+The listing should be dsplayed over the full width.
+
+[Invoice_without_error.pdf](https://github.com/user-attachments/files/21502953/Invoice_without_error.pdf)
+
+### How to reproduce
+
+Create a standard invoice document.
+
+### Definition of Done
+
+- [ ] An automated test covers the fix.
+- [ ] Integration/E2E testing in staging is done.
+- [ ] Changelog markdown file created or updated in /changelog/_unreleased directory.
+- [ ] Developer documentation written/updated.
+- [ ] End user and/or developer documentation written or updated with clarification.
+- [x] Regression test created to ensure bug does not reappear, and automated regression tests pass.
+- [ ] Code changes resolve the reported bug without introducing new issues.","component/documents, Platform(Default), domain/crm-after-sales"
+shopware/shopware,Cloud: Unable to create a Google Shopping saleschannel,"### Shopware Version
+
+cloud
+
+### Affected area / extension
+
+Platform(Default)
+
+### Actual behaviour
+
+No more Google Shopping sales channels can be created in the cloud. Other sales channels are available. The window remains empty.
+
+<img width=""912"" height=""575"" alt=""Image"" src=""https://github.com/user-attachments/assets/b31d8ea5-a2e9-4e39-95c4-83723c84b423"" />
+
+### Expected behaviour
+
+.
+
+### How to reproduce
+
+Create a Google Shopping sales channel in the cloud shop :)
+
+### Definition of Done
+
+- [ ] An automated test covers the fix.
+- [ ] Integration/E2E testing in staging is done.
+- [ ] Changelog markdown file created or updated in /changelog/_unreleased directory.
+- [ ] Developer documentation written/updated.
+- [ ] End user and/or developer documentation written or updated with clarification.
+- [ ] Regression test created to ensure bug does not reappear, and automated regression tests pass.
+- [ ] Code changes resolve the reported bug without introducing new issues.","extension/Social-Shopping, priority/critical, Platform(Default), domain/discovery, customer-support"
+woocommerce/woocommerce,The new reports in woo are terrible.,"### Prerequisites
+
+- [x] I have carried out troubleshooting steps and I believe I have found a bug.
+- [x] I have searched for similar bugs in both open and closed issues and cannot find a duplicate.
+
+### Describe the bug
+
+I just want to be able to pull monthly numbers and its impossible to do in the new reporting. Please roll it back. it was better before.
+
+### Expected behavior
+
+I just want to be able to pull monthly numbers and its impossible to do in the new reporting. Please roll it back. it was better before.
+
+### Actual behavior
+
+I just want to be able to pull monthly numbers and its impossible to do in the new reporting. Please roll it back. it was better before.
+
+### Steps to reproduce
+
+I just want to be able to pull monthly numbers and its impossible to do in the new reporting. Please roll it back. it was better before.
+
+### WordPress Environment
+
+<details>
+
+<summary>WordPress Environment</summary>
+
+The System Status Report is found in your WordPress admin under **WooCommerce > Status**. 
+Please select “Get system report”, then “Copy for GitHub”, and then paste it here.
+
+</details>
+
+
+### Isolating the problem
+
+- [ ] I have deactivated other plugins and confirmed this bug occurs when only WooCommerce plugin is active.
+- [ ] This bug happens with a default WordPress theme active, or [Storefront](https://woocommerce.com/products/storefront/).
+- [ ] I can reproduce this bug consistently using the steps above.","Bug, type: community contribution"
+woocommerce/woocommerce,problem in woocommerce at the end of shipping,"### Prerequisites
+
+- [x] I have carried out troubleshooting steps and I believe I have found a bug.
+- [ ] I have searched for similar bugs in both open and closed issues and cannot find a duplicate.
+
+### Describe the bug
+
+at the end of the cart when doing the shipping in our website there is a problem that not allow the client see the order completed, in spite the order is created 2 or 3 times
+
+### Expected behavior
+
+the correct behaviour is that the client see a window who says that the order is completed
+
+### Actual behavior
+
+client do the shipment and when finishing the order it appear an error window
+
+### Steps to reproduce
+
+1. go to https://carnivalmeatlab.com/tienda/
+2. add items to cart
+3. go to finish order
+4. fulfill the client info
+5. finish your order
+6. window of error appear
+
+### WordPress Environment
+
+<details>
+
+<summary>WordPress Environment</summary>
+
+The System Status Report is found in your WordPress admin under **WooCommerce > Status**. 
+Please select “Get system report”, then “Copy for GitHub”, and then paste it here.
+
+</details>
+
+
+### Isolating the problem
+
+- [ ] I have deactivated other plugins and confirmed this bug occurs when only WooCommerce plugin is active.
+- [ ] This bug happens with a default WordPress theme active, or [Storefront](https://woocommerce.com/products/storefront/).
+- [ ] I can reproduce this bug consistently using the steps above.","Bug, type: community contribution"
+woocommerce/woocommerce,Mark the ‘Set up payments’ task as in progress on WooCommerce Home when live WooPayments onboarding started,"Currently, the **“Set up payments”** task on the WooCommerce Home screen is not updated to reflect progress when a merchant begins live WooPayments onboarding. As a result, the task may remain in its initial state, even though the onboarding process is already underway.
+
+### **Expected Behavior**
+
+When a merchant initiates **live onboarding** for WooPayments, the “Set up payments” task should automatically transition to the **“in progress”** state.
+
+### **Actual Behavior**
+
+The task remains in its default (not started) state, even after live onboarding is started, potentially confusing merchants or giving the impression that no progress has been made.","Moltres, Onboarding, Task"
+woocommerce/woocommerce,[Payments NOX] Store in subdirectory can't switch to live through NOX flow,"## **Describe the bug**
+
+The URL used to disable the current WooPayments test account (`/wp-json/wc-admin/settings/payments/woopayments/onboarding/test_account/disable`) is incorrect for stores installed in a subdirectory (`example.com/store/`). This causes the test account to not be disabled when users click on ""Activate payments"" on the Payments Settings page.
+
+## **To Reproduce**
+
+Steps to reproduce the behavior:
+
+* Install WordPress in a subdirectory
+* Install WooCommerce and onboard a test account with WooPayments via the WooCommerce > Settings > Payments page.
+* Go to WooCommerce > Settings > Payments and click on ""Activate payments"" and notice that nothing happens (and that there is a 404 fetch POST request in the Network browser logs)
+
+## **Expected behavior**
+
+""Activate payments"" should work.
+
+## **Screenshots**
+
+## Environment
+
+Please fill out any of the below that applies
+
+**Operating System/Device**
+
+- [ ] Windows
+- [ ] MacOS
+- [ ] Linux
+- [ ] iPhone
+- [ ] Samsung
+- [ ] Other (add in additional context field)
+
+**Version:** 
+
+**Browser**
+
+- [ ] Desktop Edge
+- [ ] Desktop Chrome/Chromium
+- [ ] Desktop Safari
+- [ ] Mobile Edge
+- [ ] Mobile Chrome/Chromium
+- [ ] Mobile Safari
+- [ ] Other (add in additional context field)
+
+**Version:** 
+
+## **Additional context**","Bug, Moltres"
+woocommerce/woocommerce,Add REST API and hooks documentations to repository,"On the conversation with @nerrad on [https://wooorderstatusp2.wordpress.com/2025/07/30/woocommerce-order-fulfillments-complete-hooks-reference/#comment-297](https://wooorderstatusp2.wordpress.com/2025/07/30/woocommerce-order-fulfillments-complete-hooks-reference/#comment-297) we decided to include the fulfillments REST API and hooks documentation to WooCommerce public repository, because:
+
+* It’s early documentation that lives close to the code being documented.
+* If testing end us surfacing any changes being made, the docs can (and should) be updated in the same PR.","Shipping, Documentation, Escargot"
+woocommerce/woocommerce,The editor is not showing previewCart data for the checkout blocks,"When the admin doesn't have a cart session, or a cart already saved in localStorage the Editor pages for the checkout blocks fail to display the preview cart 
+
+## **Describe the bug**
+
+When the admin doesn't have a cart session, or a cart already saved in localStorage the Editor pages for the checkout blocks fail to display the preview cart
+
+## **To Reproduce**
+
+Steps to reproduce the behavior:
+
+1. Log in as an admin in incognito. Make sure you have no cart in the storefront, or a cached cart in LocalStorage
+2. Go to the Site Editor > Templates > WooCommerce > Page: Cart or Page: Checkout
+3. Notice the missing cart items and data
+
+## **Expected behavior**
+
+A preview cart should be rendered with the Beanie and Cap products
+
+## **Screenshots**
+
+<img src=""https://uploads.linear.app/f629fcde-6f9b-48e8-8af3-60eed8823bff/ee24809f-942e-42c7-9f3e-e4fc5abb4c50/f86a083c-0414-4524-ac34-d8b6597eb4c9?signature=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXRoIjoiL2Y2MjlmY2RlLTZmOWItNDhlOC04YWYzLTYwZWVkODgyM2JmZi9lZTI0ODA5Zi05NDJlLTQyYzctOWYzZS1lNGZjNWFiYjRjNTAvZjg2YTA4M2MtMDQxNC00NTI0LWFjMzQtZDhiNjU5N2ViNGM5IiwiaWF0IjoxNzU0MDQyNjgzLCJleHAiOjMzMzI0NjAyNjgzfQ.yJgNeUlkpJiTfFuHxPa0Edfje1N_cLnrJzazrZkmCGk "" alt=""Screenshot 2025-07-30 at 18.41.53.png"" width=""1134"" data-linear-height=""561"" />
+
+<img src=""https://uploads.linear.app/f629fcde-6f9b-48e8-8af3-60eed8823bff/2ea77374-631e-4550-91cf-aa132b238d5c/9c41db74-4b57-4929-920d-6eadbddd172f?signature=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXRoIjoiL2Y2MjlmY2RlLTZmOWItNDhlOC04YWYzLTYwZWVkODgyM2JmZi8yZWE3NzM3NC02MzFlLTQ1NTAtOTFjZi1hYTEzMmIyMzhkNWMvOWM0MWRiNzQtNGI1Ny00OTI5LTkyMGQtNmVhZGJkZGQxNzJmIiwiaWF0IjoxNzU0MDQyNjgzLCJleHAiOjMzMzI0NjAyNjgzfQ.h3O_CXuB9en2Ee-TQYGneZYYduQjt4d8tKbSM4-CBBw "" alt=""Screenshot 2025-07-30 at 18.41.30.png"" width=""1164"" data-linear-height=""494"" />
+
+## Environment
+
+Please fill out any of the below that applies
+
+**Operating System/Device**
+
+- [ ] Windows
+- [ ] MacOS
+- [ ] Linux
+- [ ] iPhone
+- [ ] Samsung
+- [ ] Other (add in additional context field)
+
+**Version:** 
+
+**Browser**
+
+- [ ] Desktop Edge
+- [ ] Desktop Chrome/Chromium
+- [ ] Desktop Safari
+- [ ] Mobile Edge
+- [ ] Mobile Chrome/Chromium
+- [ ] Mobile Safari
+- [ ] Other (add in additional context field)
+
+**Version:** 
+
+## **Additional context**","Bug, Rubik"
