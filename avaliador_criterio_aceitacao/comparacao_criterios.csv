@@ -1,0 +1,419 @@
+user_story_id,user_story,criterios_gerados,criterios_originais,comparacao
+0,"As an editor, I want to maintain language labels for different site parts by categories, so that I can search and maintain language labels easily. ","- Os rótulos de idioma para diferentes partes do site devem ser mantidos por categorias.
+- Deve ser possível pesquisar e manter os rótulos de idioma facilmente.
+- Não deve ocorrer exceção do tipo 'System.InvalidOperationException' relacionada a ColumnMapping.
+- A URL da página inicial deve conter ""/en"" quando a configuração de ""URLs amigáveis para SEO com vários idiomas"" estiver habilitada.
+- Deve ser possível editar produtos em massa, mesmo sem SKU.
+- A limitação de desconto ""N vezes por cliente"" deve ser aplicada também para clientes convidados.
+- O manipulador de remoção de itens não deve conflitar com o botão de remoção de cupom no carrinho de compras.
+- Erros relacionados ao menu de administração devem ser corrigidos.
+- A descrição do produto não deve sobrescrever o código HTML.
+- As miniaturas dos produtos devem ser geradas corretamente.
+- O texto do documento do item de linha não deve ser exibido de forma incorreta.",,Sem critério original para comparar
+1,"As a system administrator, I want to deploy filters run-time, so that I can roll-out filter dependent functionality efficiently througout DTAP ","- O sistema deve permitir que o administrador de sistema implante filtros em tempo de execução.
+- A funcionalidade dependente de filtros deve ser implementada de forma eficiente em todos os ambientes DTAP.
+- O filtro de faixas de preço deve aceitar apenas o preço mínimo para produtos configuráveis.
+- A URL da página inicial não deve ter ""/en"" quando a configuração ""URLs amigáveis para SEO com vários idiomas"" estiver ativada.
+- A edição em massa de produtos não deve ser permitida sem um SKU.
+- A limitação de desconto ""N vezes por cliente"" não deve ser aplicada para clientes convidados.
+- As propriedades DateTime nos modelos JSON-LD devem usar o formato ISO 8601 com fuso horário.
+- O handler de remoção de item não deve entrar em conflito com o botão de remoção de cupom no carrinho de compras.
+- Os documentos de linha de item não devem ter texto sobreposto.
+- A descrição do produto não deve sobrescrever o código HTML.
+- As miniaturas de imagem devem ser geradas corretamente.
+- A tarefa ""Configurar pagamentos"" deve ser marcada como em andamento na página inicial do WooCommerce quando o onboarding do WooPayments estiver em andamento.
+- A documentação da API REST e dos hooks deve ser adicionada ao repositório.",,Sem critério original para comparar
+2,"As a marketeer, I want to set the title attribute of a link, so I can improve the SE ranking of the website ","- O título do atributo do link deve ser configurável pelo marketeer
+- O título do atributo do link deve ser configurado de forma a melhorar o ranking de SEO do website
+- O título do atributo do link deve ser visível e correto na página
+- Ao habilitar a configuração ""SEO friendly URLs with multiple languages"", a URL da Homepage deve incluir ""/en""
+- O menu de administração não deve apresentar erros ao ser acessado
+- O texto do documento de linha deve ser exibido corretamente sem distorções
+- O fluxo de pagamento deve permitir a troca para o modo ""live"" através do NOX flow sem erros ou problemas",,Sem critério original para comparar
+3,"As a marketeer, I want to switch URLs when URL duplication occurs between pages, so that I can solve conflicts between pages easily without having to search all pages in the tree ","- Ao ocorrer duplicação de URLs entre páginas, o sistema deve ser capaz de alternar automaticamente para URLs diferentes para resolver conflitos
+- O sistema deve identificar e corrigir automaticamente a falta de ""/en"" na URL da Homepage quando a configuração ""SEO friendly URLs with multiple languages"" estiver habilitada
+- Deve ser possível editar produtos em massa mesmo sem informar o SKU
+- A restrição de desconto ""N vezes por cliente"" deve ser aplicada também para clientes visitantes
+- O handler de remoção de item não deve entrar em conflito com o botão de remoção de cupom no carrinho de compras
+- O menu de administração não deve apresentar erros
+- O sistema deve funcionar corretamente com PHP 8.2 no Prestashop 8.2
+- A funcionalidade ""Wall of fame"" no Back Office deve estar de acordo com o design do Figma
+- A descrição do produto não deve sobrescrever o código HTML
+- O texto do documento do item não deve ficar sobreposto
+- A tarefa ""Set up payments"" deve ser marcada como em progresso na página inicial do WooCommerce quando o onboarding do WooPayments estiver em andamento
+- Lojas em subdiretórios devem ser capazes de alternar para o modo live através do fluxo NOX de pagamentos",,Sem critério original para comparar
+4,"As a marketeer, I want to create friendly URLs for my nested product pages, so I can improve the SE ranking of the product section of my website ","- A URL dos produtos deve ser amigável e conter palavras-chave relevantes para melhorar o ranking de SEO
+- A URL deve ser fácil de ler e entender para os usuários
+- A URL deve ser única para cada produto e não deve conter caracteres especiais
+- A configuração de múltiplos idiomas deve incluir ""/en"" na URL da página inicial
+- A edição em massa de produtos deve ser possível apenas para produtos com SKU
+- O menu de administração não deve apresentar erros ao acessar as páginas relacionadas aos produtos
+- O texto dos itens de linha não deve estar sobreposto ou ilegível na documentação dos produtos.",,Sem critério original para comparar
+5,"As a marketeer, I want to set the rel attribute of external links, so I can make sure that SE bots do no affect SE rankings for pages with many external links ","- O atributo rel dos links externos deve ser configurado corretamente para garantir que os bots de mecanismos de busca não afetem o ranking das páginas com muitos links externos.
+- A exceção 'System.InvalidOperationException' não deve ser lançada ao tentar editar produtos sem SKU.
+- A URL da página inicial deve conter ""/en"" quando a configuração de ""URLs amigáveis para SEO com vários idiomas"" estiver habilitada.
+- A limitação de desconto ""N vezes por cliente"" deve ser aplicada corretamente para clientes convidados.
+- O menu de administração não deve apresentar erros.
+- Problemas relacionados ao PHP 8.2 no Prestashop 8.2 devem ser resolvidos.
+- A descrição do produto não deve sobrescrever o código HTML.
+- O texto do documento do item de linha não deve ser espremido.
+- A tarefa ""Configurar pagamentos"" deve ser marcada como em andamento na página inicial do WooCommerce quando o onboarding do WooPayments estiver em andamento.",,Sem critério original para comparar
+6,"As a marketeer, I want to set canonical tags to individual pages, so I can avoid duplicate content easily without having to set permanent redirects, and thereby will improve the SE ranking of the website. ","- O usuário deve conseguir definir tags canônicas para páginas individuais
+- As tags canônicas devem evitar conteúdo duplicado sem a necessidade de redirecionamentos permanentes
+- A definição das tags canônicas deve melhorar o ranking nos mecanismos de busca
+- O filtro de faixas de preço deve aceitar apenas o preço mínimo para produtos configuráveis
+- A URL da página inicial deve incluir ""/en"" quando a configuração de ""URLs amigáveis para SEO com vários idiomas"" estiver habilitada
+- É possível editar produtos em massa sem a necessidade de SKU
+- A limitação de desconto ""N vezes por cliente"" não deve ser aplicada para clientes convidados
+- Os modelos JSON-LD devem utilizar o formato ISO 8601 com fuso horário para propriedades de data e hora
+- A remoção de itens não deve entrar em conflito com o botão de remoção de cupom no carrinho de compras
+- Erros de menu de administração devem ser corrigidos
+- A descrição do produto não deve sobrescrever o código HTML
+- O texto do documento do item não deve ser exibido de forma incorreta
+- A tarefa ""Configurar pagamentos"" deve ser marcada como em andamento no WooCommerce Home quando o onboarding do WooPayments estiver em andamento
+- A loja em um subdiretório não deve ter problemas ao alternar para o modo ao vivo através do fluxo NOX
+- O editor deve exibir corretamente os dados de pré-visualização do carrinho de compras para os blocos de checkout.",,Sem critério original para comparar
+7,"As a marketeer, I want to be solve URL conflicts immediately, so I avoid not-friendly URLs and thereby, will postively influence the overall SE ranking of the website ","- O sistema deve ser capaz de resolver conflitos de URL imediatamente.
+- As URLs geradas devem ser amigáveis para SEO.
+- A classificação do site nos mecanismos de busca deve ser positivamente influenciada.
+- O sistema não deve lançar exceção 'System.InvalidOperationException'.
+- A URL da página inicial deve incluir ""/en"" quando a configuração de ""SEO friendly URLs with multiple languages"" estiver ativada.
+- Deve ser possível editar produtos em massa sem a necessidade de informar o SKU.
+- A limitação de desconto ""N vezes por cliente"" deve ser aplicada também para clientes convidados.
+- O handler de remoção de item não deve entrar em conflito com o botão de remoção de cupom no carrinho de compras.
+- O menu de administração deve funcionar corretamente.
+- O cache de administração deve ser atualizado corretamente, sem erros.
+- A conexão com o back office só deve ser permitida com SSL ativado.
+- Problemas relacionados ao PHP 8.2 em Prestashop devem ser resolvidos.
+- A descrição do produto não deve sobrescrever o código HTML.
+- O texto do documento de linha do item não deve ficar distorcido.
+- Problemas de finalização de envio no WooCommerce devem ser corrigidos.
+- O armazenamento em subdiretório não deve apresentar problemas ao alternar para o modo ao vivo através do fluxo NOX de pagamentos.",,Sem critério original para comparar
+8,"As a marketeer, I want to view basic analytics data of media items easily, so that I can analyze whether content is relevant to the intended audience ","- O filtro de faixas de preço deve permitir a seleção de tanto o preço mínimo quanto o máximo para produtos configuráveis
+- Não deve ocorrer exceção do tipo 'System.InvalidOperationException' ao visualizar dados de análise de mídia
+- A URL da página inicial deve incluir ""/en"" quando a configuração de ""URLs amigáveis para SEO com vários idiomas"" estiver habilitada
+- Deve ser possível editar produtos em massa sem a necessidade de informar o SKU
+- A limitação de desconto ""N vezes por cliente"" deve ser aplicada também para clientes convidados
+- As propriedades de data e hora nos modelos JSON-LD devem seguir o padrão ISO 8601 com fuso horário
+- A remoção de itens na visualização de mídia não deve conflitar com o botão de remoção de cupom no carrinho de compras
+- O nome do arquivo de visualização de mídia deve estar centralizado
+- A descrição do produto não deve sobrescrever o código HTML
+- O texto do documento do item de linha não deve aparecer de forma distorcida
+- O plugin SwagCommercial deve ser ativado com sucesso após a atualização para a versão 7.1.1
+- A tarefa 'Configurar pagamentos' deve ser marcada como em andamento na página inicial do WooCommerce quando o onboarding do WooPayments estiver em andamento.",,Sem critério original para comparar
+9,"As a marketeer, I want to view the top keywords of the week easily, so that I can analyze key words, and when needed, I can undertake action upon this information ","- O sistema deve exibir facilmente os principais palavras-chave da semana
+- Deve ser possível analisar as palavras-chave
+- Deve ser possível tomar ações com base nas informações das palavras-chave
+- O loop congelado na página de pedidos deve ser corrigido
+- O erro ""Client token has expired"" do Braintree deve ser corrigido e o token deve ser regenerado automaticamente no checkout
+- A URL da página inicial deve conter ""/en"" quando a configuração de ""URLs amigáveis para SEO com vários idiomas"" estiver ativada
+- O contêiner MySQL deve ser corrigido para lidar com identificadores muito longos no Docker Compose Setup
+- Deve ser possível editar produtos em massa, mesmo sem SKU
+- As propriedades DateTime nos modelos JSON-LD devem usar o formato ISO 8601 com fuso horário
+- O manipulador de remoção de itens não deve entrar em conflito com o botão de remoção de cupom no carrinho de compras
+- O menu de administração deve funcionar corretamente
+- A conexão com o back office só deve ser permitida se o SSL estiver ativado
+- O erro de instalação do PrestaShop 8 localmente deve ser corrigido
+- Problemas com o PHP 8.2 no Prestashop 8.2 devem ser resolvidos
+- A quantidade mínima de produto no Prestashop deve ser configurável
+- A descrição do produto não deve sobrescrever o código HTML
+- O texto do documento de item de linha não deve ser sobreposto
+- O plugin SwagCommercial deve poder ser ativado após a atualização para a versão 7.1.1
+- O fluxo de pagamento NOX não deve ter problemas ao alternar para o modo ao vivo em um subdiretório da loja
+- O editor deve mostrar corretamente os dados do previewCart para os blocos de checkout.",,Sem critério original para comparar
+10,"As a marketeer, I want to view segment page view results of the current week easily, so I can see at a glance whether content is relevant to the intended segment. ","- A marketeer deve ser capaz de acessar facilmente a página de visualização de segmentos e ver os resultados da semana atual.
+- Os resultados devem ser apresentados de forma clara e de fácil compreensão, permitindo que o marketeer identifique rapidamente se o conteúdo é relevante para o segmento pretendido.
+- Os filtros de faixas de preços devem aceitar tanto o preço mínimo quanto o preço máximo para produtos configuráveis.
+- O loop congelado na página de pedidos deve ser corrigido para garantir que a página funcione corretamente.
+- O erro ""Client token has expired"" no Braintree deve ser corrigido, garantindo que o token seja regenerado automaticamente durante o checkout.
+- A posição do datepicker na versão 2.4.8-p1 deve ser corrigida para dispositivos de toque.
+- O botão ""Print Order"" deve ser exibido corretamente na página de visualização de pedidos na versão 2.4.7-p5.
+- O limite de desconto ""N vezes por cliente"" deve ser aplicado corretamente para clientes convidados.
+- As propriedades DateTime nos modelos JSON-LD devem usar o formato ISO 8601 com fuso horário.
+- O handler de remoção de itens no carrinho de compras não deve interferir com o botão de remoção de cupons.
+- Os erros relacionados ao menu de administração devem ser corrigidos.
+- A quantidade mínima de produtos no Prestashop deve ser configurável.
+- O SwagCommercial deve poder ser ativado após a atualização para a versão 7.1.1.
+- O nome do arquivo de pré-visualização de mídia deve estar centralizado.
+- A descrição do produto não deve sobrescrever o código HTML.
+- O texto do documento de item de linha não deve ser distorcido.
+- A tarefa ""Configurar pagamentos"" deve ser marcada como em andamento no WooCommerce Home quando o onboarding do WooPayments estiver em andamento.
+- A loja em um subdiretório não deve ter problemas ao alternar para o modo ao vivo através do fluxo NOX.",,Sem critério original para comparar
+11,"As a marketeer, I want to view the top refferals of the week, so I can quickly see what websites drive most traffic to a specific page or media item.  ","- O sistema deve permitir que o marketeer visualize as principais referências da semana.
+- O sistema deve exibir rapidamente os sites que direcionam mais tráfego para uma página específica ou item de mídia.
+- O token do Braintree deve ser regenerado automaticamente durante o checkout para evitar o erro ""Client token has expired"".
+- A URL da página inicial deve incluir ""/en"" quando a configuração de ""URLs amigáveis para SEO com vários idiomas"" estiver ativada.
+- O contêiner MySQL deve ser configurado corretamente para evitar erros de identificador longo no Docker Compose.
+- A edição em massa de produtos deve ser possível mesmo sem a inclusão de SKU.
+- A limitação de desconto ""N vezes por cliente"" deve ser aplicada também para clientes convidados.
+- Os modelos JSON-LD devem utilizar o formato ISO 8601 com fuso horário para as propriedades de DateTime.
+- O sistema deve lidar corretamente com a remoção de itens e cupons no carrinho de compras.
+- Os menus de administração devem funcionar corretamente, sem erros.
+- O sistema deve ser compatível com PHP 8.2 no Prestashop.
+- A funcionalidade ""Wall of Fame"" no backoffice deve estar de acordo com o design do Figma.
+- O nome do arquivo de pré-visualização de mídia deve estar centralizado.
+- A descrição do produto não deve sobrescrever o código HTML.
+- As miniaturas das imagens devem ser geradas corretamente.
+- O texto de documentos de linha não deve ser sobreposto.
+- A integração com o Google Shopping deve ser possível na nuvem.
+- Problemas relacionados ao WooCommerce no final do processo de envio devem ser resolvidos.
+- O fluxo de pagamento NOX deve permitir que lojas em subdiretórios mudem para o modo ""ao vivo"" sem problemas.",,Sem critério original para comparar
+12,"As an editor, I want to assign page sections  to pages using the current page section structure, so I can easily and efficiently manage page sections assigned to pages ","- O editor deve ser capaz de atribuir seções de página às páginas utilizando a estrutura atual de seções de página.
+- O editor deve poder gerenciar facilmente e de forma eficiente as seções de página atribuídas às páginas.
+- O token do Braintree deve ser regenerado automaticamente durante o checkout para evitar o erro ""Client token has expired"".
+- A posição do datepicker deve ser corrigida em dispositivos touch na versão 2.4.8-p1.
+- A exceção 'System.InvalidOperationException' em relação ao ColumnMapping deve ser corrigida.
+- A URL da Homepage deve conter ""/en"" quando a configuração ""SEO friendly URLs with multiple languages"" estiver ativada.
+- A edição em massa de produtos sem SKU deve ser permitida.
+- A limitação de desconto ""N vezes por cliente"" deve ser aplicada também para clientes convidados.
+- As propriedades de DateTime nos modelos JSON-LD devem utilizar o formato ISO 8601 com fuso horário.
+- O menu de administração deve funcionar corretamente.
+- A ativação do SwagCommercial após a atualização para a versão 7.1.1 deve ser possível.
+- A descrição do produto não deve sobrescrever o código HTML.
+- O texto do documento do item de linha não deve ser sobreposto.
+- A tarefa ""Configurar pagamentos"" deve ser marcada como em progresso no WooCommerce Home quando o onboarding ao vivo do WooPayments for iniciado.
+- A loja em subdiretório não deve ter problemas ao alternar para o modo ao vivo através do fluxo NOX.
+- A documentação da API REST e dos hooks deve ser adicionada ao repositório.",,Sem critério original para comparar
+13,"As an editor, I want to access content items quickly from a content element, so I do not have to look up these content types in the menu and therefore, I can work more productive. ","- O editor deve ser capaz de acessar rapidamente os itens de conteúdo de um elemento de conteúdo.
+- Os tipos de conteúdo não devem precisar ser procurados no menu.
+- O acesso rápido aos itens de conteúdo deve aumentar a produtividade do editor.
+- Os loops congelados na página de pedidos devem ser corrigidos.
+- O erro ""Client token has expired"" no Braintree deve ser corrigido, com o token sendo regenerado automaticamente no checkout.
+- A posição do datepicker 2.4.8-p1 em dispositivos de toque deve ser corrigida.
+- O erro de exceção 'System.InvalidOperationException' relacionado a ColumnMapping deve ser corrigido.
+- A URL da página inicial deve incluir ""/en"" quando a configuração ""SEO friendly URLs with multiple languages"" estiver habilitada.
+- A limitação de desconto ""N vezes por cliente"" deve ser aplicada também para clientes convidados.
+- As propriedades de DateTime nos modelos JSON-LD devem seguir o formato ISO 8601 com fuso horário.
+- As validações devem ser consistentes, com trim em todos os controllers do Opencart 3.0.4.1 e versões anteriores.
+- O erro no menu de administração deve ser corrigido.
+- A atualização do cache de administração deve funcionar corretamente, com uma resposta adequada.
+- O erro de instalação do PrestaShop 8 localmente deve ser corrigido.
+- O badge deve ser exibido corretamente após a atualização para a versão 8.2.2.
+- A quantidade mínima de produto no Prestashop deve ser corrigida.
+- O plugin SwagCommercial deve poder ser ativado após a atualização para a versão 7.1.1.
+- O nome do arquivo de pré-visualização de mídia deve estar centralizado.
+- A descrição do produto não deve sobrescrever o código HTML.
+- Os thumbnails devem ser gerados corretamente.
+- O texto do documento de item de linha não deve estar sobreposto.
+- O armazenamento em subdiretório no Payments NOX deve permitir a mudança para o modo ao vivo através do fluxo NOX.
+- A documentação da API REST e dos hooks deve ser adicionada ao repositório.",,Sem critério original para comparar
+14,"As an editor, I want to crop images, so I can edit images easily without using photo editing tools, and therefore, I can work more productive. ","- O editor deve ser capaz de cortar imagens de forma fácil, sem a necessidade de utilizar ferramentas de edição de fotos adicionais.
+- O editor deve ser capaz de realizar o corte de imagens de forma produtiva, aumentando a eficiência do trabalho.
+- O sistema não deve lançar exceções do tipo 'System.InvalidOperationException' relacionadas a mapeamento de colunas.
+- A URL da página inicial deve conter ""/en"" quando a configuração de ""URLs amigáveis para SEO com múltiplos idiomas"" estiver ativada.
+- O handler de remoção de item não deve conflitar com o botão de remoção de cupom no carrinho de compras.
+- O menu de administração não deve apresentar erros.
+- O nome do arquivo de pré-visualização de mídia deve estar centralizado.
+- As miniaturas das imagens devem ser geradas corretamente.
+- O texto do documento do item de linha não deve estar comprimido.
+- A descrição do produto não deve sobrescrever o código HTML.",,Sem critério original para comparar
+15,"As a developer, I want to check on all released flash versions supported by browsers, so  I can adjust my flash presentation towards new flash versions in particular. ","- O sistema deve permitir ao desenvolvedor verificar todas as versões de flash lançadas suportadas pelos navegadores.
+- O sistema deve fornecer informações claras sobre as versões de flash suportadas pelos navegadores.
+- O sistema deve permitir ao desenvolvedor ajustar apresentações em flash para se adequar às novas versões de flash.
+- A URL da página inicial deve incluir ""/en"" quando a configuração ""SEO friendly URLs with multiple languages"" estiver habilitada.
+- O sistema deve permitir a edição em massa de produtos, mesmo que não possuam SKU.
+- A limitação de desconto ""N vezes por cliente"" deve ser aplicada também para clientes convidados.
+- As propriedades DateTime nos modelos JSON-LD devem utilizar o formato ISO 8601 com fuso horário.
+- O erro no menu de administração deve ser corrigido.
+- A tarefa ""Configurar pagamentos"" deve ser marcada como em andamento na página inicial do WooCommerce quando o onboarding do WooPayments estiver ativo.",,Sem critério original para comparar
+16,"As a developer, I want to pass on variables to flash files directly. ","- O desenvolvedor deve ser capaz de passar variáveis diretamente para arquivos flash.
+- O sistema não deve lançar uma exceção 'System.InvalidOperationException' relacionada a ColumnMapping.
+- O texto do documento de itens de linha deve ser exibido corretamente, sem ser ""espremido"".",,Sem critério original para comparar
+17,"As an editor, I want to set a default editor environment language, so I can easily login in the preffered language without changing languages each time I login. ","- O ambiente do editor deve permitir a definição de um idioma padrão para login.
+- O idioma padrão definido deve ser mantido em todas as sessões de login.
+- O sistema não deve lançar uma exceção 'System.InvalidOperationException' relacionada a mapeamento de colunas.
+- A URL da página inicial deve conter ""/en"" quando a configuração de ""URLs amigáveis para SEO com vários idiomas"" estiver ativada.
+- O menu de administração não deve apresentar erros.
+- O acesso ao back office só deve ser permitido se o SSL estiver ativado, redirecionando para o modo seguro (https://) quando necessário.",,Sem critério original para comparar
+18,"As an editor, I want to set a content language, so I see SiteManager in my personal language without having to change content language each time after login ","- O editor deve ser capaz de definir o idioma do conteúdo no SiteManager
+- O SiteManager deve ser exibido no idioma pessoal do editor após o login, sem a necessidade de alterar o idioma do conteúdo a cada vez
+- O idioma do conteúdo deve ser mantido mesmo após o logout e login novamente
+
+Testes:
+- Verificar se o editor consegue acessar a configuração de idioma no SiteManager
+- Verificar se o idioma do SiteManager é exibido corretamente após o login
+- Verificar se o idioma do conteúdo permanece o mesmo após o logout e login novamente",,Sem critério original para comparar
+19,"As a developer, I want to  define presentation variants in my presentation configuration xml file, so I can easily and efficiently deploy my presentation throughout DTAP ","- O arquivo de configuração XML deve permitir a definição de variantes de apresentação de forma clara e organizada
+- As variantes de apresentação definidas no arquivo XML devem ser facilmente aplicadas e implantadas em todos os ambientes DTAP
+- O filtro de faixas de preço deve aceitar apenas o preço mínimo para produtos configuráveis
+- O token do Braintree deve ser regenerado automaticamente durante o checkout para evitar o erro ""Client token has expired""
+- O seletor de datas deve ser posicionado corretamente em dispositivos de toque na versão 2.4.8-p1
+- O botão ""Print Order"" deve ser exibido corretamente na página de visualização de pedidos na versão 2.4.7-p5
+- A limitação de desconto ""N vezes por cliente"" deve ser aplicada corretamente para clientes convidados
+- As propriedades de data e hora nos modelos JSON-LD devem seguir o formato ISO 8601 com fuso horário
+- Os problemas relacionados ao menu de administração, instalação local do PrestaShop 8, problemas com PHP 8.2, quantidade mínima de produto no PrestaShop, visualização de mídia e descrição do produto, geração de miniaturas, texto de documento comprimido e criação de canal de vendas no Google Shopping devem ser resolvidos
+- A tarefa ""Configurar pagamentos"" deve ser marcada como em andamento na página inicial do WooCommerce quando o onboarding do WooPayments estiver em andamento
+- Lojas em subdiretórios não devem encontrar problemas ao alternar para o modo ao vivo através do fluxo NOX no Payments NOX.",,Sem critério original para comparar
+20,"As a system administrator, I want to  define presentation variants in my presentation configuration xml file, so I can easily and efficiently deploy my presentation throughout DTAP ","- O arquivo de configuração XML deve permitir a definição de variantes de apresentação de forma clara e organizada.
+- As variantes de apresentação definidas no arquivo XML devem ser facilmente acessíveis e editáveis.
+- A implantação das apresentações em diferentes ambientes (DTAP) deve ser eficiente e sem erros.
+- Os filtros de faixas de preço devem aceitar tanto o preço mínimo quanto o preço máximo para produtos configuráveis.
+- O loop congelado na página de pedidos deve ser corrigido para garantir a funcionalidade adequada.
+- O erro ""Client token has expired"" no Braintree durante o checkout deve ser corrigido, regenerando automaticamente o token.
+- O problema de exceção 'System.InvalidOperationException' relacionado a mapeamento de colunas deve ser resolvido.
+- A URL da página inicial deve incluir ""/en"" quando a configuração de ""URLs amigáveis para SEO com vários idiomas"" estiver ativada.
+- O contêiner MySQL deve lidar corretamente com identificadores longos no Docker Compose Setup.
+- A limitação de desconto ""N vezes por cliente"" deve ser aplicada corretamente, mesmo para clientes convidados.
+- As propriedades de DateTime nos modelos JSON-LD devem seguir o padrão ISO 8601 com fuso horário.
+- O manuseador de remoção de itens no carrinho de compras não deve entrar em conflito com o botão de remoção de cupons.
+- Os problemas relacionados a erros de administração, PHP 8.2, quantidade mínima de produtos, descrição de produtos, geração de miniaturas e texto de documento devem ser corrigidos.
+- A criação de um canal de vendas do Google Shopping na nuvem deve ser possível sem problemas.
+- A tarefa ""Configurar pagamentos"" deve ser marcada como em andamento na página inicial do WooCommerce quando o onboarding do WooPayments estiver em andamento.",,Sem critério original para comparar
+21,"As an editor, I want to search on media item titles and terms in the Media Repository in an case insensitive way, so the number of media item results are increased, and I find relevant media items more efficiently. ","- A busca nos títulos e termos de itens de mídia no Repositório de Mídia deve ser realizada de forma case insensitive.
+- O número de resultados de itens de mídia deve aumentar após a busca ser realizada.
+- Os itens de mídia relevantes devem ser encontrados de forma mais eficiente após a busca ser realizada.
+- Os resultados da busca devem ser apresentados de forma clara e organizada.
+- A busca deve ser testada com diferentes termos e títulos para garantir a correta funcionalidade.",,Sem critério original para comparar
+22,"As an editor, I want to show media items from another web initiative using  thesaurus relationships  of that web initiative on my website, so I do not have to reconstruct the thesaurus of the other web initiative for my own website, which saves time since its duplication. ","- O editor consegue visualizar os itens de mídia de outra iniciativa web em seu site, utilizando as relações de tesauro da iniciativa original.
+- Não é necessário reconstruir o tesauro da outra iniciativa para exibir os itens de mídia no site do editor.
+- O tempo economizado pela não duplicação do tesauro é perceptível.
+- A integração dos itens de mídia é feita de forma eficiente e sem erros.
+- A exibição dos itens de mídia segue as diretrizes de SEO do site do editor.
+- A edição em massa de produtos é possível, mesmo sem a presença de SKU.
+- A limitação de desconto ""N vezes por cliente"" é aplicada corretamente, inclusive para clientes convidados.
+- As propriedades de data e hora nos modelos JSON-LD seguem o padrão ISO 8601 com fuso horário.
+- A remoção de itens do carrinho não interfere no botão de remoção de cupom.
+- O menu de administração do site funciona corretamente, sem erros.
+- O site é compatível com PHP 8.2 e o Prestashop 8.2.
+- A descrição do produto não sobrescreve o código HTML.
+- O texto do documento do item não é cortado ou sobreposto.
+- O armazenamento em subdiretório para pagamentos NOX permite a troca para o modo ao vivo sem problemas.",,Sem critério original para comparar
+23,"As an IT manager, I want IPv6 support by CMS SiteManager, so I'm ensured that CMS SiteManager will work fine once IPv6 is applied into our hosting/network environment ","- CMS SiteManager must be able to support IPv6 once it is applied into the hosting/network environment
+- Price ranges filter must be able to take both min_price and max_price for configurable products
+- The exception 'System.InvalidOperationException' in System.Private.CoreLib.dll should not be thrown when using CMS SiteManager
+- Homepage URL should have ""/en"" when ""SEO friendly URLs with multiple languages"" setting is enabled
+- Products must have a SKU when bulk editing them
+- Discount limitation ""N Times Per Customer"" should be enforced for guest customers
+- DateTime properties in the JSON-LD models must use ISO 8601 with timezone
+- Line item document text should not be squished
+- The 'Set up payments' task should be marked as in progress on WooCommerce Home when live WooPayments onboarding is started
+- The store in subdirectory should be able to switch to live through NOX flow on Payments NOX",,Sem critério original para comparar
+24,"As a main editor, I want to configure workflow on classification-level, so that I can control what editors are allowed to use several terms which are used on specific site parts / facets in order to prevent publishing faulty content ","- A main editor deve ser capaz de configurar o fluxo de trabalho em nível de classificação.
+- Os editores devem ser restritos de usar termos específicos em partes/facetas do site.
+- A configuração do workflow deve prevenir a publicação de conteúdo defeituoso.
+- O filtro de faixas de preço deve aceitar apenas o preço mínimo para produtos configuráveis.
+- O loop congelado na página de pedidos deve ser corrigido.
+- O erro ""Client token has expired"" no Braintree deve ser corrigido para regenerar automaticamente o token no checkout.
+- O posicionamento do datepicker na versão 2.4.8-p1 deve ser corrigido em dispositivos de toque.
+- O botão ""Print Order"" deve ser exibido na página de visualização de pedidos na versão 2.4.7-p5.
+- O erro de exceção 'System.InvalidOperationException' relacionado ao mapeamento de colunas deve ser corrigido.
+- A URL da página inicial deve incluir ""/en"" quando a configuração de ""SEO friendly URLs with multiple languages"" estiver ativada.
+- O problema de container MySQL com nome de identificador muito longo no Docker Compose deve ser resolvido.
+- A edição em massa de produtos sem SKU deve ser permitida.
+- A limitação de desconto ""N vezes por cliente"" deve ser aplicada também para clientes convidados.
+- As propriedades DateTime nos modelos JSON-LD devem usar o formato ISO 8601 com fuso horário.
+- Erros relacionados a admin menu, instalação local do PrestaShop, PHP 8.2, quantidade mínima de produto, ativação do SwagCommercial, descrição do produto sobrescrevendo código HTML, geração de miniaturas, texto de documento de linha espremido, criação de canal de vendas Google Shopping no Cloud, e centralização do nome do arquivo de visualização de mídia devem ser corrigidos.
+- A tarefa ""Configurar pagamentos"" deve ser marcada como em progresso no WooCommerce Home quando o onboarding do WooPayments estiver em andamento.",,Sem critério original para comparar
+25,"As a main editor, I want to configure workflow on media item-level for specific content types, so that I can control who can modify what specific item in order to prevent editors from publishing faulty content ","- O editor principal deve ser capaz de configurar fluxo de trabalho a nível de item de mídia para tipos de conteúdo específicos
+- Deve ser possível controlar quem pode modificar itens específicos de mídia
+- A configuração do fluxo de trabalho deve prevenir editores de publicar conteúdo defeituoso
+- A renovação automática do token deve ser realizada corretamente durante o checkout
+- A URL da página inicial deve conter ""/en"" quando a configuração de URLs amigáveis com vários idiomas estiver ativada
+- O MySQL Container deve ser configurado corretamente para evitar erros de identificador longo
+- A edição em massa de produtos deve ser possível mesmo sem um SKU
+- A limitação de desconto ""N vezes por cliente"" deve ser aplicada corretamente para clientes convidados
+- As propriedades de DateTime nos modelos JSON-LD devem seguir o padrão ISO 8601 com fuso horário
+- O manipulador de remoção de itens não deve conflitar com o botão de remoção de cupom no carrinho de compras
+- Erros relacionados ao menu de administração devem ser corrigidos
+- O plugin SwagCommercial deve ser ativado corretamente após a atualização para a versão 7.1.1
+- A descrição do produto não deve sobrescrever o código HTML
+- As miniaturas das imagens devem ser geradas corretamente
+- O texto do documento do item de linha não deve ser distorcido
+- O nome do arquivo de visualização de mídia deve estar centralizado
+- A tarefa ""Configurar pagamentos"" deve ser marcada como em andamento no WooCommerce Home quando o onboarding do WooPayments estiver ativo.",,Sem critério original para comparar
+26,"As a online channel manager, I want to publish content in multiple languages, so I can target my audience in their native language, which increases relevancy and attract more traffic to my website ","- O canal de gerenciamento online deve permitir a publicação de conteúdo em múltiplos idiomas
+- O conteúdo publicado deve ser exibido corretamente na página inicial, incluindo a adição do sufixo ""/en"" quando a configuração de URLs amigáveis com múltiplos idiomas estiver ativada
+- Deve ser possível editar produtos em massa sem a necessidade de informar o SKU
+- As propriedades de DateTime nos modelos JSON-LD devem seguir o padrão ISO 8601 com fuso horário
+- O handler de remoção de itens não deve conflitar com o botão de remoção de cupom no carrinho de compras
+- O menu de administração deve funcionar corretamente, sem erros
+- A conexão com o back office só deve ser permitida se o SSL estiver ativado
+- A ativação do SwagCommercial deve ser possível após a atualização para a versão 7.1.1
+- A descrição do produto não deve sobrescrever o código HTML
+- O texto do documento do item de linha não deve ser distorcido
+- Deve ser possível criar um canal de vendas do Google Shopping na nuvem
+- A tarefa ""Configurar pagamentos"" deve ser marcada como em andamento no WooCommerce Home quando o onboarding do WooPayments estiver em andamento",,Sem critério original para comparar
+27,"As an editor, I want to translate media items to multiple languages,  so I can produce content in different language easily ","- A URL da página inicial deve incluir ""/en"" quando a configuração ""SEO friendly URLs with multiple languages"" estiver ativada
+- O limite de desconto ""N vezes por cliente"" deve ser aplicado também para clientes convidados
+- As propriedades de DateTime nos modelos JSON-LD devem seguir o formato ISO 8601 com fuso horário
+- O handler de remoção de item não deve interferir com o botão de remoção de cupom no carrinho de compras
+- O erro no menu de administração deve ser corrigido
+- A quantidade mínima de produtos no Prestashop deve ser respeitada
+- O texto do documento de linha deve ser exibido corretamente sem sobreposições",,Sem critério original para comparar
+28,"As an editor, I want to maintain media items in multiple languages easily and in an intuitive way, so that I can work productively ","- O editor deve ser capaz de manter itens de mídia em vários idiomas de forma fácil e intuitiva
+- Não deve ocorrer exceção de 'System.InvalidOperationException' ao tentar manter os itens de mídia
+- A URL da página inicial deve incluir ""/en"" quando a configuração de ""URLs amigáveis para SEO com vários idiomas"" estiver ativada
+- Deve ser possível editar produtos em massa sem a necessidade de informar o SKU
+- As propriedades DateTime nos modelos JSON-LD devem seguir o formato ISO 8601 com fuso horário
+- O handler de remoção de itens não deve conflitar com o botão de remoção de cupons no carrinho de compras
+- O menu de administração não deve apresentar erros
+- O nome do arquivo de pré-visualização de mídia deve estar centralizado
+- A descrição do produto não deve sobrescrever o código HTML
+- As miniaturas devem ser geradas corretamente
+- O texto do documento do item de linha não deve estar espremido
+- Deve ser possível criar um canal de vendas do Google Shopping na nuvem
+- A tarefa 'Configurar pagamentos' deve ser marcada como em andamento na página inicial do WooCommerce quando o onboarding do WooPayments estiver ativo",,Sem critério original para comparar
+29,"As an editor, I need time zone support for setting publication and expiration dates for my content, so I know what time a content item goes 'live' in my time zone.  ","- O editor deve ser capaz de definir datas de publicação e expiração para o conteúdo, considerando o fuso horário do usuário.
+- As datas definidas pelo editor devem refletir corretamente o horário de 'live' do conteúdo no fuso horário do editor.
+- O sistema deve suportar o uso do formato ISO 8601 com fuso horário para propriedades de DateTime nos modelos JSON-LD.
+- O posicionamento do datepicker em dispositivos de toque deve ser corrigido.
+- A limitação de desconto ""N vezes por cliente"" deve ser aplicada corretamente para clientes convidados.
+- A edição em massa de produtos sem SKU deve ser possível.
+- A remoção de itens e cupons no carrinho de compras não deve causar conflitos.
+- A visualização de arquivos de mídia e a geração de miniaturas devem funcionar corretamente.
+- O website de demonstração do Opencart deve estar funcionando corretamente.
+- Os erros relacionados ao PHP 8.2 em Prestashop devem ser resolvidos.
+- A quantidade mínima de produtos no Prestashop deve ser configurável.
+- A criação de um canal de vendas do Google Shopping na nuvem deve ser possível.
+- A tarefa de 'Configurar pagamentos' deve ser marcada como em andamento no WooCommerce Home quando o onboarding do WooPayments estiver ativo.",,Sem critério original para comparar
+30,"As an system administrator, I want to monitor the performance of CMS SiteManager, so I can analyze indicators which influence the health of CMS SiteManager, and undertake action upon this analysis in order to make CMS SiteManager healthy again. ","- O sistema deve ser capaz de monitorar e analisar os indicadores de desempenho do CMS SiteManager
+- O sistema deve ser capaz de identificar problemas que afetam a saúde do CMS SiteManager
+- O sistema deve ser capaz de tomar ações corretivas com base na análise dos indicadores de desempenho
+- O sistema deve ser capaz de restaurar a saúde do CMS SiteManager após a identificação e correção dos problemas
+- Os indicadores de desempenho monitorados devem incluir a ocorrência de loops congelados, erros de token expirado, exceções de mapeamento de colunas, URLs incorretas, problemas de edição em massa de produtos, limitações de desconto não aplicadas, entre outros
+- O sistema deve ser capaz de lidar com problemas específicos do CMS SiteManager, como conflitos de manipuladores de remoção de itens e botões de remoção de cupons, problemas de ativação de plugins após atualizações, descrições de produtos sobrescrevendo código HTML, geração de miniaturas ausente, texto de documento de linha espremido, entre outros
+- O sistema deve ser capaz de lidar com problemas específicos de outras plataformas, como erros de instalação local, problemas com versões específicas de PHP, problemas de ativação de plugins após atualizações, entre outros
+- O sistema deve ser capaz de lidar com problemas específicos de integração, como a falta de visualização de dados de carrinho de compras no editor
+- Os critérios de aceitação devem ser testáveis, ou seja, devem ser claramente definidos e verificáveis através de testes de software.",,Sem critério original para comparar
+31,"As an editor, I want to search full-text on content in the editor environment, so that I can find relevant content faster and therefore work more productive ","- O sistema deve permitir que o editor pesquise o conteúdo completo no ambiente do editor.
+- A pesquisa deve ser capaz de encontrar conteúdo relevante de forma rápida.
+- O editor deve ser capaz de trabalhar de forma mais produtiva após realizar a pesquisa.
+- A exceção 'System.InvalidOperationException' relacionada à correspondência de colunas não deve ocorrer durante a pesquisa.
+- A URL da página inicial deve incluir ""/en"" quando a configuração de ""URLs amigáveis para SEO com múltiplos idiomas"" estiver habilitada.
+- Deve ser possível editar produtos em massa mesmo que não possuam SKU.
+- A limitação de desconto ""N vezes por cliente"" deve ser aplicada também para clientes convidados.
+- O texto do documento de itens de linha não deve ser exibido de forma incorreta.
+- A tarefa ""Configurar pagamentos"" deve ser marcada como em andamento na página inicial do WooCommerce quando o onboarding do WooPayments estiver em andamento.
+- A loja em subdiretório não deve ter problemas ao alternar para o modo ao vivo através do fluxo NOX de pagamentos.",,Sem critério original para comparar
+32,"As a business decision-maker, I want to use French as native language for CMS SiteManager, so that native french-speaking editors adopt CMS SiteManager easily, and as a result gain a better understanding of the application ","- O CMS SiteManager deve ter a opção de selecionar o idioma francês como idioma nativo.
+- Os editores de língua francesa devem ser capazes de adotar facilmente o CMS SiteManager.
+- Os editores de língua francesa devem ganhar um melhor entendimento da aplicação.
+- O filtro de faixas de preço deve aceitar apenas o preço mínimo para produtos configuráveis.
+- O token do Braintree deve ser regenerado automaticamente durante o checkout para evitar o erro ""Client token has expired"".
+- A URL da página inicial deve incluir ""/en"" quando a configuração de ""SEO friendly URLs with multiple languages"" estiver ativada.
+- A edição em massa de produtos não deve ser permitida sem um SKU.
+- A limitação de desconto ""N vezes por cliente"" deve ser aplicada também para clientes convidados.
+- A remoção de itens no carrinho de compras não deve conflitar com a remoção de cupons.
+- A instalação do PrestaShop 8 localmente não deve apresentar erros.
+- O produto mínimo do Prestashop deve ser configurável.
+- O plugin SwagCommercial deve ser ativado corretamente após a atualização para a versão 7.1.1.
+- A descrição do produto não deve sobrescrever o código HTML.
+- O texto do documento do item não deve ser exibido de forma incorreta.
+- O nome do arquivo de pré-visualização de mídia deve estar centralizado.
+- A tarefa ""Configurar pagamentos"" deve ser marcada como em progresso no WooCommerce Home quando o onboarding do WooPayments estiver ativo.",,Sem critério original para comparar
+33,"As an editor, I want to maintain FAQs in multiple languages easily and in an intuitive way, so that I can work productively","- O editor deve ser capaz de manter FAQs em múltiplos idiomas de forma fácil e intuitiva
+- O token do Braintree deve ser regenerado automaticamente durante o checkout
+- A URL da homepage deve conter ""/en"" quando a configuração de ""SEO friendly URLs with multiple languages"" estiver ativada
+- Deve ser possível editar produtos em massa mesmo sem um SKU
+- A limitação de desconto ""N vezes por cliente"" deve ser aplicada também para clientes convidados
+- As propriedades de DateTime nos modelos JSON-LD devem seguir o formato ISO 8601 com fuso horário
+- O handler de remoção de itens não deve entrar em conflito com o botão de remoção de cupom no carrinho de compras
+- O website de demonstração do Opencart deve funcionar corretamente
+- Erros relacionados ao menu de administração devem ser corrigidos
+- Problemas de compatibilidade com PHP 8.2 no Prestashop devem ser resolvidos
+- A quantidade mínima de produtos no Prestashop deve ser configurável
+- O nome do arquivo de pré-visualização de mídia deve estar centralizado
+- A descrição do produto não deve sobrescrever o código HTML
+- O texto do documento de item de linha não deve estar comprimido
+- A tarefa ""Configurar pagamentos"" deve ser marcada como em andamento na página inicial do WooCommerce quando o onboarding do WooPayments estiver ativo
+- A documentação do REST API e dos hooks deve ser adicionada ao repositório.",,Sem critério original para comparar

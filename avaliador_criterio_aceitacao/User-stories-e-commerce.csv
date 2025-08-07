@@ -1,0 +1,1016 @@
+"ID","Project","Connextra","Acceptance Criteria"
+"528","A","As a user, I would like to be able to register as a new user.",""
+"530","A","As a user, I would like to be able to reset my password.","Validity period 30 minutes, must be communicated"
+"532","A","As a user, I would like to be able to contact the merchant as easily as possible via the website.",""
+"534","A","As a user, I would like to be able to connect to the merchant's social channels.",""
+"536","A","As customer, I would like to enter a search term in the search slot.","* Requirement: Display with first characters and at the latest from the 3rd letter.   
+* Do not display title on ""ProductAvailability"" (40).  
+* The search with letter spacers or forgotten letters, etc., should also work (Did you mean perhaps?)The search should also perform a \* search if no search word is entered.
+* search with Enter works like clicking on magnifying glassIf there is no search result, a message is displayed the autocomplete opens without noticeable delay and displays a desired and defined search result.  
+* There is no exact localisation of the my maybe function, so a proposal will be developed, which can then be discussed and adapted again.  "
+"538","A","As customer, I want to have an autocompletion when I type in the search slot.","* Since the shop will have under 1000 titles, a high performance display of the search slot is expected
+* The appearance of the search slot will work without perceived delay
+* If I change my search word, the changed search result appears immediately."
+"540","A","As a user of the search slot, I expect a meaningful search result.","Left and right imprecise search"
+"542","A","As a user, I can access the main pages (first level) via navigation.",""
+"548","A","As a user, I would like to use the Service, Topics and Company areas in the navigation.","* routing and speaking URls must be there"
+"550","A","As a user, I would like to see the header at all times.",""
+"554","A","As a user, I would like to be able to log in to the shop.","* Rename ""Login area"" to ""Login centre""
+* Accordion flush right with ""Login centre"" button
+* Design: Button blue and font white, with selection, button white and font blue, frame blue
+* Click on Accordion field, e.g. ""Online shop"", to open dropdown
+* Rename the ""Shop Login"" field to ""Online Shop"" and keep it bold
+* Spacing of the input fields like ""Specialised databases""
+* Design and naming of fields, see wireframe
+* All fields and all buttons the same length and width
+* Field naming in the field and disappears with input
+* Font like ""Shop Login"" only thin (not bold)
+* Naming of fields: ""e-mail address"", ""password""
+* Link ""Forgot password"" incl. the function
+* Button ""Login""   
+"
+"556","A","As a user, I would like to see content in the sub-navigation (3rd level) for products.",""
+"558","A","As a user, I would like to log in to Software Online (ASP).",""
+"560","A","As a user, I would like to log in to specialised databases online.","* Naming fields ""User name"" (instead of ""User code""), ""Password""
+"
+"562","A","As a user, I would like to have the option of more personalised contact.",""
+"564","A","As a customer, I would like to be able to log in to my account details.",""
+"568","A","As a customer, I would like to order via my existing customer account.","do not build client side
+Email (correct) instead of Email (patternlab)
+Email textbox catches incorrect entries via an email validator
+Error messages are differentiated:Wrong email: You have entered an incorrect email addressWrong password: You have entered an incorrect password
+Error message under the respective assigned text box"
+"570","A","As a customer, I would like to save my customer data when placing an order.",""
+"572","A","As a customer, I would like to order without creating a customer account.",""
+"574","A","As a customer, I would like to select and save the payment method.","* The last payment type is always used as the default payment type.   
+* In the mobile view, the SEPA text moves below the input fields and above the tick to confirm the mandate 
+* Instead of 2x account holder, once account holder and once IBAN"
+"576","A","As a customer, I would like to select and specify the payment method.",""
+"578","A","As a customer, I would like to enter my contact details, billing and delivery address and password.",""
+"580","A","As a customer, I would like to provide my contact details, billing and delivery address.",""
+"582","A","As a customer, I would like to see an order overview page.",""
+"584","A","As a customer, I would like to see and edit the goods + conditions in the shopping basket.",""
+"586","A","As a customer, I would like listed search results.",""
+"590","A","As a customer, I want relevant search results.",""
+"594","A","As a customer, I would like to be able to filter my search results.",""
+"596","A","As a customer, I would like to be able to see the co-operation partners.",""
+"598","A","As a customer, I would like to be able to find out about the benefits of the product.",""
+"600","A","As a customer, I want to be able to see offers and testimonials.",""
+"604","A","As a customer, I want to see the corresponding cover for a title on a detail page.","* Cover in this size ratio, see screenshot under (full) text. In terms of size and position. 
+* Fix position for all product detail pages. 
+* Cover should not jump if the number of lines of bibliographic data is different.   
+* The images are permanently cached and scaled to the required size for the website so that we create as little data overhead as possible.  
+"
+"606","A","As a customer, I would like access to product types associated with the magazine.","* Title is displayed for the linked products   
+"
+"610","A","As a customer, I would like to be able to find out about the product benefits.",""
+"614","A","As a customer, I can see all the important bibliographical information about a journal on the details page.","The information is displayed correctly in the correct order, if available."
+"616","A","As a customer, I want to see a price for a product.",""
+"622","A","As a customer, I would like to order a special single issue.",""
+"628","A","As a customer, I would like to see bibliographic data on the printed works.",""
+"636","A","As a user, I would like to see related products on the detail page.",""
+"886","A","As a user of the website, I always want to see the total amount of my shopping basket directly, unless I am in the order process, so that I can easily trade the contents of my shopping basket.","1. the total of all individual items in the shopping basket is displayed here. (see below, 98,00 €)
+2. the total amount is displayed as a button on the shopping basket symbol. (see below ""1"")
+3. the total is updated as soon as I have added an item to the shopping basket.
+
+ "
+"887","A","As a customer, I would like to see all the necessary and important content on the individual info pages, such as the imprint.","* Click on the respective navigation point to link to the existing URL
+* The order of the footer elements can be seen in the screenshot and the content, if available, should be taken from the current page and integrated into the new design.  
+* Search results can be found under Products.
+* The remaining pages are static content."
+"888","A","As an anonymous user in the checkout, I would like a direct confirmation to let me know that my order was successful.",""
+"889","A","As an anonymous customer, I would like to receive an order confirmation by e-mail so that I can consider my order as confirmed and archivable.","* Thank you - Page
+* the order confirmation should be easy to print.
+"
+"890","A","As a customer, I would like to have speaking URLs so that I can recognise directly where I am.","* The Distinctive Title field from the TVO is used and the information from EAN for the ISBN part of the URL
+* Every detail page call works and even titles with special characters are displayed in the URL and the title detail page can be called up
+* Replace the special characters with ""\_"", with other URL-compatible characters
+"
+"892","A","As a customer, I would like to be able to switch between the product forms of a product on detailed pages.","* Button ""Print"", ""Print (apart)"" and ""Digital"" alternate white/blue with selection, see also Epic search result
+* Print and apart are linked via RelationTypeCode 06. If available, then display print (apart)where the subtitle says apart, it is print apart, otherwise not.
+* For the display of the product form selection to work, the products must be linked to each other via RelationTypeCode 06 (alternative format) in the backend.
+* Clicking on buttons changes the display of the offer according to the information in backend.   
+"
+"897","A","As a customer, I would like to see related products on title detail pages for certain products so that my purchasing decisions are supported.","* Display next to the texts
+* Display always on every detail page, so there is a fallback to the 3 most important products, the first 3 search priority
+* Recommendations for you
+* Related Code 23 is evaluated, then all products, maximum 5 for display
+* Demarcation must be clearly visible, as on the start page
+* The area of a recommendation is provided with a link to the corresponding detail page
+* The cover, the title, the gross price with VAT label are displayed"
+"898","A","As a user, I would like to have the ONIX product form displayed in addition to the merchant's product form for individual programmes in the Software format so that I can differentiate more as a user.","* Product form is equal to DB or DD or DI and merchandise management product forum is equal to software, then is displayed under Format: Software, CD-ROM (merchandise management product form)
+* ISBN must also be displayed here"
+"901","A","As a user of the website, I would like to see the GKV certificate for the products mentioned.",""
+"902","A","As a merchant, I would like to have client newsletters and the accompanying CD labelled with special features, as these are very important products.","Presentation of the bibliography relates to the TVO from the field with code 02"
+"904","A","As a user, I would like to have the option of ordering specialist portals for a test period to see whether the software meets my requirementsThe monthly pass should be used as a selection interface and added to the shopping basket.","* Monthly pass is treated as a product form like print or digital and does not display a search result, but only a detail page, comparable to the apart works
+* By clicking on the ""Monthly pass for test"" button, the product detail page of the monthly pass is transferred to the shopping basket,
+* Add to the confirmation of receipt sent to the customer:
+We will create the individual access data for you.
+* Monthly pass is displayed separately in the shopping basket, as well as in the order completion page and order confirmation.
+* Monthly pass reacts like other product forms to each other, such as Print (Apart) to Print
+* Instead of ""Add to basket"" -> ""Monthly pass for test"" is displayed on the details page
+* Visualise the monthly pass more strongly (e.g. red)
+* Extend bibliographic information to include the existing TVO short text field (02) and name it ""More information""
+"
+"906","A","As a customer, I would like to have a landing page for the firm's products so that I can find out about them.",""
+"907","A","As a user, I would like to have a landing page for accountants to find out about products.",""
+"908","A","As a user, I would like to have a landing page for companies to inform me about products.",""
+"909","A","As a user, I want to visit a site with maximum performance, because that gives me a particularly good feeling when using the site.",""
+"910","A","As a user of the website, I would like the API to return all the necessary information for a search result so that all the functions described can be used and called up in the front end.","=> Index: ensure completeness (details, articles)=> Search: deliver X hits, then X more (X is initially set to 3)=> Implement aftersearch, see 11104=> Sort by relevance, ranking, price, more(?), see 10970=> Index: max 4 contributors, from the DB by priority code B01, then code A01, sorted by SequenceNumber for more details see 10969
+"
+"911","A","As a user of product areas, I would like to have a form so that I can ask direct questions about my modules and programme areas quickly and easily.","* Creation of JSON file with all data to be entered in the MOment via the current frontend for the product area, programme area and modules
+* Transfer wording
+* Question area with validation for entry whether available or not
+* Contact data
+* Date picker and time window
+* File upload with drag & drop and maximum upload size of 4 MB
+* Submit area with checkboxes
+* Stage is omitted
+* with mail dispatch to Mrs Wuttke (configurable)"
+"912","A","As a user of the website with login data, I would like to find the login window better structured.","* Name functioning login
+* Rename ""Login area"" to ""Login centre""
+* Accordion flush right with ""Login centre"" button
+* Design: Button blue and font white, with selection, button white and font blue, frame blue
+* Click on Accordion field, e.g. ""Online shop"", to open dropdown
+* Rename the ""Shop Login"" field to ""Online Shop"" and keep it bold
+* Spacing of the input fields like ""Specialised databases""
+* Design and naming of fields, see wireframe
+* All fields and all buttons the same length and width
+* Field naming in the field and disappears with input
+* Font like ""Shop Login"" only thin (not bold)
+* Naming of fields: ""e-mail address"", ""password""
+* Link ""Forgot password"" incl. the function
+* Button ""Login""
+* Default login data not MVP
+   
+ "
+"913","A","As the site operator, I want my site to be optimised for search engines in order to be as high up in the search rankings as possible.","* SEO specification read completely
+* All points that have to be done within the programme code of the website are done, the following things are extra tasks:
++ SSL encryption is a separate task and is not covered here
++ Google Tracking is a separate task and is not covered here
++ Sitemaps is a separate task and is not covered here
+"
+"914","A","As a user, I would like to find a somewhat clearer structure in the navigation.","1) Enlarge, see outline, and flush with left navigation start page, right login button and below with solutions for... finally 
+2) Enlarge Recommendations window flush with About us, see dashed line
+3) Coloured field with text in html ""Recommendations of the editors"" flush with first column, see dashed line --> keep existing image, will then be requested again
+4) Cover image uniform and larger 
+5) Play title 2 lines and if longer then dots ...
+6) Linking All Products and then according to the category, e.g.: ""All Products Print"", which links accordingly to AfterSearch"
+"915","A","As a user, I would like to be able to subscribe to a newsletter so that I am always informed about innovations.","* The methodology of the old page is used again. The content of the advert is structured differently. Product news is omitted. Contact form is also simplified.
+* Mail dispatch to recipient for confirmation
+* Confirmation on the page itself for successful registration
+* Insert the recipient into the database
+* Unsubscribe is possible
+* The first name and surname fields must be included"
+"916","A","As a user searching, I want to be able to sort my results in a meaningful way.","Standard sorting: 
+* Publication date
+* Price Ascending
+* Price Descending"
+"917","A","As a user, I expect that the active filters are always selected and that my legal area filters are updated when a media form filter is removed.",""
+"920","A","As a user, I would also like to see the author information on the detail page.","AuthorDisplay as in the search result:
+Keyname / Keyname (maximum 4, sorted by ContributorRole H01 > A01)
+first in the bibliography:
+Authors: Keyname / Keyname / Keyname / Keyname"
+"921","A","As a user, I would like to see licence information for the individual software programs so that I can make better purchasing decisions.","* New field in the TVO, as well as reference period etc.
+* Display in the bibliography, as the bottom item"
+"922","A","As a user, I would like the assignment to a speciality to be relevant only at second level so that there are not too many assignments for the search, which may be confusing.","* When maintaining in the TVO, level 1 is partially assigned, this should be ignored when playing out for the AfterSearch
+* The assignment of new specialist areas must work"
+"923","A","As a user of the website, I would also like to be able to restrict to software seminars in order to be able to separate the seminars from the other search results, so that a certain clarity and findability of seminars and other products is improved.","* Test maintenance of a seminar on software seminars and check how the old page handles it.
+* Naming software seminars
+* Filter under media form in AfterSearch possible
+* for the index we only take those seminars that also have related products
+* all others are omitted
+* This one product then lists all other seminars as related products with the information from textype code 21
+* and is displayed on the detail page per related product line by line with wk button
+* Under Services and the Seminars item, a search result is then executed with a restriction to seminars
+
+"
+"924","A","As a user of the website, I don't want to find the print apart works, otherwise I have the feeling of finding duplicate search results.","* Detail page of apart works can still be called up
+* Print Apart works are no longer found as individual data records via the search function
+"
+"926","A","As a user, I would like to have the shipping costs for magazines shown in the shopping basket.","* Include merchandise management information from the backend in the domestic shipping costs field in the index and deliver it
+* In the new WK method, the shipping costs must also be delivered"
+"928","A","As a user, I would also like to be able to recognise the data for associated products on covers.","* Links are all there
+"
+"929","A","As a user, I would like to be able to order more than one copy at a time on a detail page.",""
+"930","A","As a user, I would like to have a better search result sorted by default.","* The quick search provides useful search results
+* Expectations are that titles with the word or words in the title appear first  "
+"931","A","As a customer, I would like to have the opportunity to order a free trial of software products.","* Click on the ""Test now for free"" button to transfer to the shopping basket.
+* The test access is displayed in the totaliser and in the WK with 0 euros and with test access as a quasi subtitle
+* The following is added to the order confirmation: ""We will create the individual access data for you.
+* (this text comes after: ""Thank you for your order of 12/02/2019, which we are happy to confirm"")
+* Software products are only mentioned in the e-mail and excluded from the automatic ordering process.
+* For the exclusion, these 4 software products are identified via the ISBN stored in the backend.
++ Operation
++ Office
++ Law Firm
++ Select"
+"932","A","As an anonymous customer with a filled shopping basket, I would like to enter my address for the further order process in order to be able to have an order delivered.","* Input of job title works with autocomplete on a text box with the contents from the appendix, thus retaining the logic from the old shop for company input.  
+* A text box is added with the placeholder ""If known"": Customer number. Located at the bottom. Not a mandatory field
+* Back like browser.backNext goes to payment"
+"933","A","As an anonymous user in the checkout, I would like to select a payment method to pay for an order.","* Back makes a browser backThere is no shipping area, it has been cancelled
+* Next redirects to the confirm area.  
+* In the mobile view, the SEPA text slides under the input fields and above the tick to confirm the mandate
+* Instead of 2x account holder, once account holder and once IBAN"
+"934","A","As an anonymous customer, I would like to see the summary of my order again.","* terms and conditions checkbox directly above the button and under total amount
+* Product form not necessary, then only the continuation reference status is there"
+"935","A","As a user, I would like to see references to other products in the shopping basket in addition to the products in the basket.","* All products that are linked with RelationTypeCode 23 to all products in the WK are displayed randomly sorted
+* The width from back to checkout is utilised with a sensible product quantity
+* The products are displayed under ""Checkout""
+* Cover, title and gross price are displayed with /VAT. label are displayed
+* Clicking on a title area leads to the detail page
+* There is the option of transferring a title from the cross-selling advert directly to the WK"
+"937","A","As an anonymous user, I would like to be able to register or log in to the site in order to access my customer data.","* as an anonymous user, after clicking on Checkout, the page with login and registration options appears
+* Click on Let's go to enter the address of the checkout
+* After successful registration, a completed address mask appears with all previous customer data
+* Email (correct) instead of email (patternlab)
+* E-mail text box intercepts incorrect entries via an e-mail validator
+* Error messages are displayed in such a way that they are up to date in terms of security, e.g. only ""Registration not correct"" instead of displaying which field is exactly incorrect
+* When clicking on Register, the previous address mask + password entry and repetition are displayed
+* After entering the data, the data is saved in the database and a login is possible with the data
+* After entering the data, the customer receives an e-mail in which he must confirm that he is the correct recipient
+* The customer is informed that he can only continue with the registered data after confirming the e-mail
+* The registration is retained for 7 days
+* Standard texts are included for this communication
+* After confirming the e-mail, the customer is taken to the login area in the WK and must log in, after which he continues as a logged-in user
+"
+"938","A","As a user, I would like my orders to be integrated automatically and error-free into the order flow as before.","* The orders from the new system end up in the same database as the previous orders and fill out all fields there
+* The order CSV files are generated correctly and do not differ in any way from the previous files
+* Monthly pass orders are also handled like any other product via this process"
+"939","A","As a user of the website, I would like to be able to order via PayPal.","* The latest version of PayPal is integrated 
+* PayPal is offered in the payment method selection and displayed accordingly with the PayPal logo 
+* Integration is carried out according to the PayPal standard checkout process"
+"940","A","As the operator of the website, I would like orders to have a value of at least 10 EUR in order to be able to keep the offer for free shipping.","* An order smaller than 10 EUR is not possible
+"
+"942","A","As a user, I would also like to be able to order individual issues of magazines so that I don't have to take out a subscription directly if I only find one article interesting.","* Single issues are a separate product form for magazines
+* Product form is only displayed if single issues of magazines are also available
+* Several copies of the single issue can be placed in the WK
+* There are 2 selection boxes, one with the issue number and one with a year selection. 
+* The issue selection is preselected with ""Issue""
+* Product form is single issue
+* The shipping costs are taken from the field ""Shipping costs single issue"" from the TVO per copy
+* The issue quantity is taken from the ""Issues per year"" field in the TVO
+"
+"943","A","As a user with a smartphone, I want to be able to use the site with all its functions in a clean and understandable way.","* Login view in product navigation -> hides information, rather place it statically above
+* Shopping basket button is missing in the mobile view on the shopping basket
+* Home page information is displayed in the shopping basket 
+* mobile navigation not possible -> areas must expand and can be accessed on the left
+* Range of functions and price are not selectable
+* History adjusted
+
+"
+"944","A","As a user, I would like to have the seals placed in a prominent and immediately visible area.","* For all products the images created in the backend are displayed
+* The images should be integrated to the right of the shopping basket button so that they are clearly recognisable and existing functionalities are not restricted
+* The previous location in the text area has been removed"
+"945","A","As a user, I expect an SSL-encrypted site in order to have confidence in the operator.","* All pages are played out exclusively via https
+* an SSL certificate is correctly integrated
+* there is no mixxed content
+* the certificate display in the browser always shows a secure page"
+"946","A","As the operator of the old website, I want the changeover to the new website to run as smoothly as possible in terms of search engine findability and detailed pages.","* All detail pages under the old domain will be structured in the same way as the detail pages under the new domain
+"
+"947","A","As a user, I would like to use my existing data for the login.","* existing login data can be used for the login"
+"948","A","As a user of the shop, I would like to see the correct prices on the shopping basket page and in the totaliser so that I am not confused when buying.","* Shopping basket page shows same price as totaliserPrices are correctCart blink indicates new routing"
+"949","A","As a user, I would like to see that a trial version has been added to the shopping basket so that I can continue to the checkout process.","* Font whiteFeedback is recognised"
+"950","A","As a user, I would like to see the message for the minimum order value only once.","* Minimum order value message may only be displayed once, with a subtitle indicating that it is a test product."
+"951","A","As a customer, I want my functionalities to be displayed properly and not blurred so that they are easier for the user to read.",""
+"952","A","As a user, I want the detail pages to be displayed correctly and the user-friendliness not to be restricted.","Certificates are positioned correctlyHTML structure is not damagedAll templates are tested with all functionality"
+"953","A","As a customer, I want my image not to be too large and to be displayed in good quality.","* Banner is integrated in picture tag in different resolutions
+* Images are optimised in file size
+* breakpoints from css are taken into account
+"
+"954","A","As a user, I would like to be able to vary the quantity of items, even for vintages and covers, before adding them to the shopping basket.","The functionality is guaranteed as on all other detail pages"
+"955","A","As a user, if I have selected payment by invoice, I do not want to have to enter any SEPA details.","When purchasing on account, validation for SEPA is suspendedSepa information text is only displayed if Sepa is selectedCheckout process takes payment types into account completely and fullyOne payment method is preselected"
+"956","A","As a user, I would like to be redirected to the order completion page so that I can check my entries again.","* Data is written to the database for CSV order exports
+* Page can be called up and contains all the necessary links, including test products, and the order completion page contains the same information as the shopping basket.  
+* Shipping costs are displayed on the order completion page
+* as in the shopping basket 'I have accepted the terms and conditions' Checkbox as for payment method, not marked orange
+* Email dispatch works"
+"957","A","As a user, I would like to see the correct VAT information.","* If the price is annualised, the VAT calculation is adjusted."
+"958","A","As a user, I would like to see a price description so that I can make an easier purchase decision.","* PriceTypeDescription is displayed correctly and positioned appropriately for the layout."
+"959","A","As a user, you want to pay the right price to benefit from the graduated prices.","VAT is calculated correctly and the unit price is selected correctly"
+"960","A","As a user, I would like to be able to decide whether or not to order the selected article as a serialised product.","Continuation reference on shopping basket page is displayed correctly again **List: ""**the continuation reference is displayed on the order completion page"".
+displayed on the order completion page""
+
+  
+"
+"962","A","As a user, I would like to see either the ISBN labelled as ISBN, or the order number labelled as order number to know which number it is.","* Field urn is output as order numberField isbn13 is output as ISBN"
+"963","A","As a user, I want the added value of software products to be displayed correctly so that I can read the content.","Added value is played out in software products"
+"965","A","As a user, I would like to be able to access the shopping basket page via a more comprehensible navigation in the mobile view.","* Button of the totaliser works as a link"
+"966","A","As a merchant, I want my website to run on older browsers so that I don't lose any customers.","* Compatibility checknetspirits asked how high the usage of IE 11 and below is"
+"968","A","As a user, I would like to be able to register completely.",""
+"971","A","As a user, I would like to see the titles of software product links under the cover so that I can better distinguish between the products.","* In the case of an order number, an order number is also displayed for the products
+* The name for the link is taken from the ProductFormDescription field in the TVO from the composite of linked products
+* If ProductFormDescription is filled, the info from this field is used for the title display under the cover, if not, the fallback is the ProductForm as before"
+"972","A","As a user who wants to book a seminar, I would like to be able to name the participants by name and email for each seminar date so that the accounting department can quickly confirm the date for the customer.","* The number of participants determines the number of seminar bookings (example: 3 participants means the number 3 for the shopping basket quantity)
+* The quantity cannot be manipulated in the shopping basket
+* The total price is displayed correctly according to the quantity
+* The request is implemented responsively and runs on Chrome, Firefox, IE11 and Edge
+* Instead of ""add to shopping basket"" it says ""book seminar""
+* After clicking on Book seminar, a mask opens that makes it possible to add participants with name and e-mail to the booking
+* Via the mask I can add participants, cancel the entry and go to the shopping basket
+* The screen only closes if I actively close it and do not click outside the screen
+* Each participant must be able to be added individually and not with a mass entry so that the number can be determined
+* The participants are displayed in the checkout process from the shopping basket to the order overview to the order confirmation email
+*
+"
+"976","A","As a user of the CMS, I want all edited content to be retained even after a release and for the CMS to continue to function.",""
+"978","A","As a user of the CMS, I would like to be able to add stage images, i.e. images across the entire width of a page.",""
+"979","A","As a user of the CMS, I would like to be able to maintain a 2-page-wide grid with video, image and text content.",""
+"985","A","As a user of Umbraco, I would like to be able to edit tabs and tab content on all product detail pages.",""
+"986","A","As a maintainer of Umbraco, I would like to be able to add a video, image, html or text on all product pages and at any point across the entire width.",""
+"987","A","As an Umbraco maintainer, I would also like to be able to maintain the content of popups within the product benefits.",""
+"989","A","As an Umbraco maintainer, I can maintain a background on product detail pages and place a text on it.",""
+"990","A","As a user of Umbraco, I would like to be able to edit the contents of the functional scopes by editing the contents of columns or rows.",""
+"994","A","As a maintainer of Umbraco, I would like to be able to add a video, image, html or text on all product pages and at any point across the entire width.",""
+"1001","A","As a maintainer of Umbraco, I would like to be able to add a video, image, html or text on all product pages and at any point across the entire width.",""
+"1002","A","As a user of Umbraco, I would like to be able to edit the contents of the functional scopes by editing the contents of columns or rows.",""
+"1004","A","As a user, I would like to be able to filter search results according to seminar subtypes in order to find relevant results.","* Aftersearch always displays all types that are part of the product database."
+"1005","A","As a buyer, I would like to be able to enter a voucher code under ""Payment methods"" in order to receive a discount.","* The design fits into the overall concept. 
+* Responsive 
+* Usability is guaranteed (also in IE11) 
+* The voucher entry is visible in the desktop area without having to scroll. 
+* If the voucher entered is valid, the discount stored in the voucher is applied. 
+* The result of the validation is only displayed on the order completion page. 
+* The voucher value is calculated in accordance with legal requirements. 
+* Voucher entry may only appear if at least one seminar is in the shopping cart"
+"1006","A","As an admin, I want to generate voucher codes to grant discounts to certain customers.","* A random 8-digit alphanumeric code is generated when the button is clicked.
+* The generated voucher code is unique.
+* List of existing codes is displayed.
+* Visual indicators for used voucher codes.
+* The list is sorted in descending order by voucher creation date. The most recent voucher is displayed at the top.
+* Fixed € values can be specified for vouchers."
+"1007","A","As a buyer, I would like to see the discount granted to me in order to be able to understand the price shown.","* Discounts granted are shown in the order confirmation email. 
+* The presentation corresponds to the design concept"
+"1008","A","As a backend user, I would like to see my formatted text in the TinyMce editor as it will be displayed later in the frontend.","* Customise TinyMCE CSS class"
+"1009","A","As a user, I would like to be able to swipe in an open mobile gallery view (tablet & co.","* Customise or replace lightbox script (research)
+"
+"1010","A","As a user, I would like the gallery to be displayed in the planned locations.","* Product page in the top content block
+* Image thumbnail display in the style of the home page content block
+"
+"1012","A","As a user, I would like all new product features to be available in the webshop in the case of seminars so that I can search and find them more easily.","- The index has defined corresponding extended composites for ProductForm, SeminarType and SeminarTopic. - The import pulls all the required data from the TVO-DB and writes it to the extended index."
+"1015","A","As a user of Umbraco, I would like to be able to maintain content as text, images and links within the content area on the start page.",""
+"1018","A","As a user of the CMS, I would like to be able to edit the overviews for the complete solutions by being able to define drop-down areas and their contents:.",""
+"151","B","As a user, I would like to order orderable and pre-order items together.","* Add notes
+* Grouping of orderable & pre-orderable titles
+* Shopping basket totaliser: pre-orderable titles are not integrated
+* Order process otherwise remains as usual
+"
+"153","B","As a user, I only want to order items that can be pre-ordered.","* Selecting ""Collection"" is possible for pre-orders.
+* Adaptation of the texts in the shopping basket (heading, reference to open invoice)
+* Change of the totaliser: ""Pre-orders are delivered with open invoice"".
+* ""Go to checkout"" => Navigation to ""Shipping"", all maintenance options as before (check bug: Further navigation with empty delivery address but selection ""Pickup"")
+* ""Payment"" selection restricted to ""Invoice""
+* ""Check order"": Integrate information texts
+"
+"155","B","As a logged in user, I would like to change my password.","* Option to change the password on the settings page of ""My account""
+* Defaults for secure password identical to those when creating a new user
+* Requires the password to be entered twice
+* Successful password change is confirmed by a message
+* The next login to the system will be made with the new password after a successful change."
+"157","B","As a user, I would like to delete my account.","* ""Delete account"" button available in the settings 
+* Security prompt indicating that the deletion process cannot be undone 
+* Data protection notice on the further use of personal data 
+* Confirmation of the deletion 
+* All user data (user data, orders, watch lists, addresses, etc.) is deleted from the store 
+* Store generates email notification to configurable email address"
+"159","B","As a user, I would like to receive an e-mail notification after placing an order.","* Dispatch after successful order
+* Reliability is guaranteed
+* Dispatch to the user's e-mail address
+* Contents as described above
+"
+"161","B","As a user, I would like to be able to use the search hit list in the mobile view.","* Focus on viewport: mobile & tablet
+* Clear user guidance, most important information is recognisable at a glance
+* Focus on function: shopping basket
+* Sort & browse
+* Aftersearch is possible
+* Nice-to-have: watch lists
+"
+"163","B","As a user, I would like to use the shopping basket in the mobile view.","* Change quantities
+* Delete article
+* View total including all discounts
+* Maintain notes at item level
+* Grouped display of items that can be pre-ordered
+* Navigate to the next order process step
+* nice-to-have: watch list
+"
+"165","B","As a user, I would like to login to the order process in the mobile view.","* Set forwarding accordingly
+* Login & registration are possible
+* Guest order is hidden for the time being
+"
+"167","B","As a user, I would like to select my delivery details in the mobile view.","* Address maintenance and selection
+* Shipping method selection
+* Further navigation
+"
+"169","B","As a user, I would like to maintain my invoice details in the mobile view.","* Address maintenance
+* Selection of payment method
+* Making the payment for e.g. Wirecard
+"
+"171","B","As a user, I would like to use the page header in the mobile view.","* Clickable buttons: Home, search slot, log in / log out, shopping basket
+* Main navigation points are findable and clickable
+"
+"173","B","As a user, I would like to pay in advance.","* Prepayment is selectable and will be transmitted as information to ERP
+"
+"175","B","As a user, I would like to have ""Payment in shop"" displayed as the payment method for ""Pick up in shop"".","* Delivery selection ""Pick up in shop"" causes the only payment method: ""Payment in shop""
+"
+"177","B","As a logged in user, I would like to access my account.","* Customised main navigation
+* First settings page is available and contains user-specific information
+"
+"179","B","As a user, I would like to view new  publications.","* Pre-filtered search hit list according to criteria defined above
+* URL is fixed
+"
+"181","B","As a user, I would like to see a list of past orders.","* List overview for orders placed
+* Display of order date, order no., number of titles, total
+* Newest first
+"
+"183","B","As a user, I would like to be able to change the number of pre-orders.","* Quantity information for pre-orderable items can be changed
+"
+"185","B","As a user, I would like to view my past orders in detail.","* Overview page:
++ Correct date display
++ Adjust sorting
+* Order details page
+* List all ordered items
+* Price at the time of order
+* Display of quantity and order notes (item & total)
+* Availability is hidden
+"
+"187","B","As a user, I would like to find magazines.","* Export ignores custom journals
+* backend maintenance of journals is possible
+* Imported journals are found via the index & detail pages are available and display a meaningful set of data
+"
+"189","B","As a user, I would like to find online databases.","* Export ignores custom online databases
+* backend maintenance of online databases is possible
+* Imported online databases are found via the index & detail pages are available and display a meaningful set of data
+"
+"191","B","As a user, I don't want to see empty categories on the details page.","* Empty categories are hidden
+"
+"193","B","As a user, I would like to use my account area.","* Reduce menu navigation in ""My account
+"
+"195","B","As a user, I would like to have a nice placeholder displayed as a cover.","* Replace no-cover image
+"
+"197","B","As a user, I would like to have my addresses from the ERP system displayed.","* On login: Update of the billing address from ERP
+* Display of ""Add new address"" the same everywhere
+* Billing address & delivery address split in address management
+* Billing address is not editable and unique
+* Loading addresses from ERP
+"
+"199","B","As a user, I would like to have separate texts for a successful or unsuccessful order completion.","* Customisation of the display for the success case
+* Adjustment of the display for the error case by Wirecard
+* Breadcrumb is always displayed
+"
+"203","B","As a user, I would like to be able to use the start page in the mobile view.","* Key Visual
+* Product Picker
+* Centring the lower area
+"
+"209","B","As a user, I would like to have the payment method transferred correctly via the ERP system.","* Compare current values with the list once again
+* Clarify value for invoice
+"
+"213","B","As a user, I would like to see the current availability of conferences.","* The availability (comes from ERP) is displayed (3 different statuses)
+* seats available (green) [for more than 6 available seats]
+* few seats available (orange) [if more than 1-5 seats available]
+* no seats available (red) [if 0 seats available]
+* Query the article number against the ERP interface
+* Display on request (detail page, shopping basket)
+"
+"215","B","As a user, I would like to have covers displayed in the correct resolution system-wide.","* The cover is not scaled up on the details page: The layout is such that the covers are always sharp and easy to read
+* Caching of appropriately scaled covers
+* Configurability of the caching
+* Custom titles always come from the file system
+"
+"219","B","As a user, I would like to register for a conference.","* Display of the different price options (note: per person) at the conference, not selectable
+* Check of available places plus corresponding consideration for user interaction on the details page
+* Preselection of the number of participants on the details page
+* Preselection of the number of participants is persisted when clicking on ""Book"" for the checkout
+* Pre-bookings are saved within the system: In this way, we avoid double bookings when there are actually no more places available
+* Hit list leads to detail page
+* Booking is only triggered by the details page
+* If availability = 0, the number of people & button for booking are hidden / deactivated
+"
+"221","B","As a user, I would like to be guided through a special checkout for conferences.","* Forwarding by the wizard only for logged-in users
+* Maintenance of participant information (first name, surname, e-mail address, price options per user)
+* Intelligent control of min & max values for the number of participants
+* Payment overview: billing address (cannot be changed), payment method (can be changed)
+"
+"223","B","As a user, I would like to check and submit my conference order.","* Confirmation page shows selected conference
+* Sidebar has the areas participant, billing address & payment method
+* Return is possible or not possible depending on the point as described above
+* Note to the shop owner can be transmitted
+* Payment selection triggers corresponding workflow when clicking on ""Order with obligation to pay""
+* Calculation of totals depending on price selection
+* Order is transmitted to the shop owner
+"
+"225","B","As a user, I would like to be able to find linked series titles from a detail page.",""
+"227","B","As a user, I would like to see related products for a title on the title details page.","* Display of related products on the title detail page
+* Marking in the backend
+* Customisation of the breadcrumb
+"
+"229","B","As a logged in user, I would like to send a price enquiry for titles without a price.","* ""Request price"" button for titles without price for logged-in users 
+* Form as overlay 
+* Consider responsiveness! 
+* Pre-filled form text 
+* Send mail with all necessary information to configured recipient 
+* Always hide shopping cart button 
+* A message is displayed for users who are not logged in (possibly with a link to registration) 
+* Feedback to the user"
+"231","B","As a user, I would like my selected payment method to be transmitted correctly to the ERP system.","Replace the values:* Invoice 1
+* Bank transfer 11
+* Credit card 3
+* Prepayment 12
+* Payment in shop 13
+"
+"233","B","As a user, I only want to use the payment methods in the webshop that I am authorised to use.","* Limitation of payment methods in the checkout
+* Consideration of the value ""payment method"" for the user
+* The payment method transmitted by ERP should be saved in the user profile
+* If ERP is not available, the settings stored in the user profile are used
+"
+"235","B","As a user, I only want to use the shipping method in the webshop that I am authorised to use.","* Transmission of the correct value when sending the order
+* Selection of a ""courier"" option for delivery route = 80
+"
+"237","B","As an administrator, I want to see all orders from the web shop.","* There is a searchable and sortable list with all orders of the past 6 months
+* This list is protected by a login
+* The status ""transmitted to ERP"", ""Transmission pending"" and ""Manually accepted"" is displayed.
+* This status can be changed manually.
+* This list is based on the existing ERP Queque
+* A searchable and sortable list of all orders from the last 6 months is available
+* This list is protected by a login
+* The status ""Transmitted to ERP"", ""Pending transmission"" and ""Manually accepted"" is displayed.
+* This status can be changed manually.
+* This list is based on the existing ERP queue
+"
+"238","B","As an admin user, I would like to see a user list of users registered in the web shop and be able to delete users.","* A searchable and sortable list with all users of the web shop is available
+* This list is protected by a login
+* A user can be deleted from the system using an action button
+* A searchable and sortable list with all users of the web shop is available
+* This list is protected by a login
+* A user can be deleted from the system using an action button
+"
+"239","B","As an administrator, I want  to configure the possible shipping costs for the web shop.","* These setting options are available on a page secured by login
+* The matrix shown above can be maintained. The prices, minimum order value and availability must be stored here
+* The settings must be used in the shopping basket
+* The shipping costs must be transferred to the ERP (check whether the interface allows this)
+"
+"240","B","As a user, I would like to see a note on the shipping cost page if there are magazines in the shopping cart.","* If there is at least one magazine in the shopping cart, a corresponding message is displayed.
+"
+"241","B","As an administrator, I want  to maintain an information page about shipping costs.","* A page on shipping costs should be maintained via the CMS
+* This can be called by the user via the footer
+"
+"245","B","As an admin, I want a defined ranking order in the search results.","* The search should observe the desired ranking rules
+"
+"247","B","As a user, I would like to see the update cycle for online products.","* Possibility of maintaining the update cycle for online products
+* Display of the update cycle on the website
+"
+"249","B","As an administrator, I want to publish public title-lists.","* Administrators can generate public wishlits by adding isbns to this list
+* Administrators can choose if an after search is displayed or not
+* An unique URL is generate and the wishlist can accessed by this URL
+* The URL should not be to long
+* A function is available for administrators to create title lists according to ISBNs
+* Furthermore, it can be set for each list whether an AfterSearch is output or not
+* These title lists can be accessed via a unique URL
+"
+"250","B","As a user, I would like to be able to order  online titles using a form.","* For online titles, no shopping basket button is displayed, but a link that opens a form.
+"
+"252","B","As a user, I would like to be able to continue using the URLs to the product detail pages of the old shop.","* When an old product URL is called up, the corresponding title details page should also be called up.
+"
+"254","B","As a user, I would like to see a note on the shipping cost page if there are magazines in the shopping cart.","* If there is at least one magazine in the shopping cart, a corresponding message is displayed.
+"
+"255","B","As an administrator, I want  to configure the possible shipping costs for the web shop.","* These setting options are available on a page secured by login
+* The matrix shown above can be maintained. The prices, minimum order value and availability must be stored here
+* The settings must be used in the shopping basket
+* The shipping costs must be transferred to the ERP (check whether the interface allows this)
+"
+"700","B","As a  user, I would like to be able to search for titles using ISBN lists so that I don't have to enter these titles manually in the search.","* The ISBN list can be inserted by copy and paste. 
+* The field can be cleared using the ""Reset"" button. 
+* The ISBN search is spelling-tolerant - ISBNs can be separated by hyphens. 
+* A list of ISBNs that were not found in the database during the search is displayed"
+"701","B","As a user, I would like to be able to re-sort the hit list to make it easier to identify titles in sets of hits.","* The above sorting criteria can be selected in the hit list and directly influence the hit list after selection
+"
+"703","B","As a user, I want to be able to log into the system and find the functions that are assigned to my role.","* Login button available in the header
+* Query of user name/email and password.
+* Cursor jumps to the user name field after the login button has been clicked
+* Successful login is confirmed.
+* The login button becomes the logout button.
+"
+"704","B","As a user, I would like to be able to log out of the system.","* Logout button is available after successful login.
+* Logout button/area is personalised with user data.
+* Successful logout is confirmed.
+"
+"725","B","As a user, I would like to filter search results later in order to refine the search.",""
+"727","B","As a user of the website, I would like to see the current price and all available cover types for a title at a glance.",""
+"728","B","As a user, I do not want any archived products to be displayed in the search results.",""
+"729","B","As a user, I would like to access the website via HTTPS.",""
+"731","B","As a user, I would like to recognise whether the article is already on a wishlist by highlighting it visually.","* If an item is already on a watch list, the icon is displayed next to the corresponding watch list. This is only visible after you have opened the watchlist button.
+* Is displayed on the following pages:
++ Details page
++ Search result
+"
+"732","B","As a user, I want to save a complete search result as a wishlist.",""
+"733","B","As a user, I would like to enter notes in wishlists.","* In the watch list, ""Add note"" incl. ""Plus icon"" is displayed for each item
+* Clicking opens a text field in which text can be entered
+* When leaving the input field, I finish the input and the note is saved
+* Saved notes are displayed with [username]: [note text]
+* Saved notes are displayed one below the other (newest at the top)
+* The add button is displayed below the notes
+* Saved notes are displayed with an ""x"" at the top right
+* Click on ""x"" to delete the existing note
+"
+"734","B","As a user, I would like to send my wish list by e-mail and thus share it.","* Click on ""Send by e-mail"" to open the standard mail program 
+* The subject is preset with: Watchlist [watchlist-name] from [user-firstname] [user-surname] 
+* The body is preset with: Here is my watchlist [watchlist-name]:[link] (The link is valid for 2 weeks.) "
+"735","B","As an unlogged-in user, I would like to be able to open a wishlist received as an e-mail.","* Logged-in user: Clicking on the link opens the watch list.
+* User not logged in: A dialogue window opens above the watch list
++ Click on ""View the watch list as a guest:
+- The watch list can be viewed with limited functionality
+- The left-hand column shows a login option
+
++ Click on ""Log in now"": the login window opens and the watch list can be used without restrictions after logging in
+"
+"736","B","As a logged in user, I would like to share a wishlist by generating a link.","* Click on ""Copy link"" to generate a link 
+* The generated link is copied to the clipboard 
+* A toast message with ""Link copied to clipboard"" appears"
+"737","B","As a user, I would like to trigger the Aftersearch search directly by selecting an element without having to click Apply filter.","* The ""Apply filter"" button is no longer available.
+* After selecting a checkbox, the search is triggered and the results list is displayed.
+* The reduced aftersearch selection remains on the left.
+* Click on ""Reset filter"" to reset the filter and display the original or new search result.
+* If, for example, an availability is clicked on, all non-matching availabilities are removed on reload.
+"
+"738","B","As a user, I would like to return a copy of a wishlist I have received by e-mail.","* A received watch list contains the button ""Send back watch list"" in the header
+* Click on ""Send back watchlist"" to open the standard mail programme
+* The subject is pre-assigned with: Feedback [name of watchlist]
+* The body is preset with: Here is my feedback on [name of watchlist]
+* [Link to the new watchlist]
+"
+"739","B","As a TRS user, I would like to be able to maintain author info and image in the contributor composite.",""
+"740","B","As a customer, I would like to register as a private user in the webshop.","* The user must enter at least the mandatory fields for successful registration
+* The user will be notified if he forgets to enter mandatory fields.
+* The user must confirm the e-mail address
+* The user is logged in after confirmation.
+* The user can log in and out with his data as soon as the e-mail has been confirmed
+* All data is saved in order to send it to ERP when an order is placed (or when registering with advertising consent).
+"
+"741","B","As a user, I would like to register as an authority in the webshop.","The user must enter at least the mandatory fields for a successful registrationThe user will be notified if he forgets to enter mandatory fields.
+The user must confirm the e-mail addressThe user is logged in after confirmationThe user can log in and out with his data.  
+All data is stored in order to send it to ERP when an order is placed (or when registering with advertising consent).  
+"
+"742","B","As a user, I would like to register as a company in the webshop.","* The user must enter at least the mandatory fields for successful registration
+* The user will be notified if he forgets to enter mandatory fields. 
+* If Country = Switzerland or Liechtenstein then UID is a mandatory field  
+* The user must confirm the e-mail address
+* The user is logged in after confirmation.
+* The user can log in and out with his data.  
+* All data is stored in order to send it to the merchandise management system when an order is placed (or when registering with advertising consent)."
+"743","B","As a logged-in existing customer, I would like to use","* Discounts are displayed at item level
+* Customisation applies to shopping cart and checkout
+* Summary shows correct amounts
+* If no discounts are returned because the title does not yet exist in the NTX, no discounts are shown for this title either
+"
+"744","B","As a user, I would like to be able to delete created wishlists within the wishlist management.","* In edit mode, the trash icon including the text ""Remove"" is visualized. 
+* Click on the icon or the text to delete the watch list"
+"745","B","As a customer, I would like to be able to transfer the entire contents of my wish list to a shopping basket.","* After clicking on ""Add all items to shopping cart"" you will be redirected to the shopping cart. 
+* All items on the watch list are in the shopping cart 
+* All items remain on the watch list"
+"746","B","As a user, I would like to be able to sort my wishlist.","* When opening the watch list, the sorting ""Date added descending"" is selected by default 
+* Clicking on ""Title A-Z"" sorts the titles alphabetically from A to Z 
+* Clicking on ""Title Z-A"" sorts the titles alphabetically from Z to A 
+* Click on ""Price ascending"" to sort the titles from the cheapest to the most expensive 
+* Clicking on ""Price descending"" sorts the titles from the cheapest to the most expensive 
+* Click on ""Date added ascending"" to display the most recently added titles last 
+* Click on ""Date added descending"" to display the most recently added titles first"
+"747","B","As a user, I would like to be able to browse through my wishlist.","* Paging is displayed in the watch lists for more than 10 tracks
+* Scrolling works without deleting data
+"
+"748","B","As a logged in user and guest buyer, I would like to add the title to the shopping basket when I click the button.","* Items can be added to the shopping basket via ""Add to basket""
+* If the item has been transferred or is already in the shopping cart, the button is displayed in a different colour with the text ""In shopping cart""
+* Clicking on the button takes the user to the shopping basket
+* The total price in the shopping basket is updated
+* The totaliser is updated
+"
+"749","B","As a user, I would like to be able to view all the titles in my shopping basket and change the sorting of my shopping basket.","* When opening the shopping basket, the sorting ""Date added descending"" is selected by default
+* Clicking on ""Title A-Z"" sorts the titles alphabetically from A to Z
+* Clicking on ""Title Z-A"" sorts the titles alphabetically from Z to A
+* Clicking on ""Price ascending"" sorts the titles from the cheapest to the most expensive
+* Clicking on ""Price descending"" sorts the titles from the cheapest to the most expensive
+* Click on ""Date added ascending"" to display the most recently added titles last
+* Click on ""Date added descending"" to display the most recently added titles first
+"
+"750","B","As a user, I would like to see in the shopping basket which elements make up the total amount shown.","* The total is displayed in a box in the shopping basket
+* The net total is displayed
+* The various VAT components are listed separately
+* The gross total is displayed
+* If the shopping basket is changed, the prices are updated
+"
+"751","B","As a user, I would like to be able to see an overview of the contents of my shopping basket at any time.","* The totaliser shows the items in the shopping basket.
+* If the shopping basket is empty, no red circle with a number is displayed, only the shopping basket icon.
+* If the contents of the shopping basket are changed, the totaliser is updated.
+* Limit case: If > 99 alternative display: ""99+""
+"
+"752","B","As a corporate customer, I would like to enter my individual order note for each item in the shopping basket so that these are shown on the invoice.",""
+"753","B","As a shop user, I would like to be able to enter, edit and select billing addresses in the order process so that I can specify them for each order.","* If no billing addresses have been entered yet, I have the choice between ""Identical to delivery address"" and ""Add new address"" _x000D_
+* I can enter a new address via ""Add new address"", which is then preselected for the order _x000D_
+* There is a selection option for addresses that have already been entered "
+"754","B","As a shop user, I would like to be able to enter, edit and select delivery addresses in the order process so that I can specify them for each order.","* If no delivery addresses have been entered yet, I have the option of entering an address via ""Add new address"".
+* I can enter a new address via ""Add new address"", which is then preselected for the order
+* There is a selection option for addresses that have already been entered"
+"756","B","As a user, I would like to enter an order note for each item in the shopping basket so that I can see this information later on my invoice.","* One input field for the order note is displayed per item
+* ""Order note visible on invoice"" is displayed as placeholder text (is not transmitted)
+* When entering in the input field, the placeholder text is removed and you can enter your own text
+* The character length is limited to 40 characters
+* The entry is saved if the focus is lost
+* If the shopping cart is reloaded, the order notes already entered are displayed again
+* If the text is deleted, the placeholder text is displayed again
+
+Translated with DeepL.com (free version)"
+"757","B","As a user, I would like to see a summary of the shopping basket in the order overview so that I can check it before sending it.","* The headline ""Check order"" is displayed
+* All items placed in the shopping basket are displayed
+* All information per item is displayed, e.g.
++ Author
++ Title
++ ISBN
++ product type
++ Quantity (readonly)
++ price
++ availability
++ order note [as label, if set or also for entering]
+
+* The total price including calculations is displayed below the WK
+* Pre-orderable items are not listed here
+"
+"759","B","As a user, I would like to be able to change the order quantity per item in the shopping basket in order to increase or reduce the quantity.","* The quantity is displayed in an input field for each item 
+* By default, an item is displayed with the quantity 1 
+* The quantity can be changed in the input field 
+* The input field only accepts numerical values > 0 
+* If the value in the input field is deleted, the default value 1 is displayed again 
+* The total amount is recalculated 
+* Click on ""+"" to increase the number by 1 
+* Clicking on ""-"" reduces the number by 1 
+* If the shopping cart is reloaded, the last entered values are displayed again"
+"760","B","As a user, I would like to delete an item in the shopping basket in order to remove it from the shopping basket.","* One ""Remove item"" button is displayed for each item
+* Click on ""Delete"" to remove the item from the shopping cart"
+"761","B","As a user, I would like to move an item in the shopping basket to a wishlist in order to remove it from the shopping basket and save it for later.","* A ""Move to watchlist"" button is displayed for each item
+* By clicking on ""Move to watchlist"", the item can be moved to an existing or new watchlist according to the existing selection logic.
+* The moved item is removed from the shopping basket (regardless of the quantity)
+* Total price calculation is retriggered
+"
+"762","B","As a user, I would like to be able to see the availability per item to know if or when an item is available.","* one of 3 traffic light colours for availability is displayed below the price information
+* The availability is displayed as text to the right of the traffic light colour.
+* Additional information, such as availability date, is displayed in a second line, possibly with a break
+"
+"763","B","As a user, I want to be able to see at any time where I am in the ordering process and what else awaits me.","* Wizzard Step 1 opens as a user who is not logged in
+* After successfully logging in, Wizzard Step 2 opens
+* If the delivery address and shipping method have been selected correctly, clicking on ""Next"" opens Wizzard Step 3
+* If the billing address and payment method have been selected correctly, Wizzard opens Step 4
+"
+"764","B","As a user, I would like to have a summary of the data at header level in the order overview in order to recognise which details have been entered.","* The data is displayed in a column to the right of the WK articles
+* All recorded information is displayed in the following order
++ Delivery address
++ Shipping method
++ billing address
++ order reference
++ payment method
++ Vouchers & discounts (if recorded)
+
+* A ""Change"" button is displayed for each category.
+* Clicking on Change takes you to the appropriate place in the wizard for editing
+"
+"765","B","As a user, I would like to be able to view the shopping basket in order to send it.",""
+"767","B","As a guest user, I would like to have a choice between register, log in or guest order when submitting a shopping basket in order to personalise the order.","* Click on order to open the wizard in Step 1
+* The fields for registration are available
+* Click on ""Login"" (with valid user data) to open Wizzard step 2
+* Click on ""Guest order"" to open Wizzard step 2
+* Click on ""Register"" to open the register page
+* After clicking on ""Submit"" within the registration (with valid user data), Wizzard step 2 is opened
+"
+"768","B","As a user, I would like to be able to enter, select or change a delivery address in order to have the item delivered to a defined address.",""
+"769","B","As a user, I would like to be able to select a shipping method to determine shipping costs and delivery service.",""
+"770","B","As a user, I would like to be able to enter, change or select an invoice address in order to address the invoice separately.",""
+"771","B","As a user, I would like to be able to select a payment method.",""
+"772","B","As a user, I would like to be able to enter a general order note.","* Max length 40 characters will be validated
+* No mandatory field
+* Position: Order completion page between positions and summary
+* Persistence (save on order completion)
+* Saving the order note at item level
+"
+"777","B","As a user, I would like to be able to see where I can pick up an ordered item.",""
+"778","B","As a user, I would like to be able to use a slider preview of existing images to get an enlarged view.","* Click on ""Enlarge images"" to open an overlay
+* The pager (X of X) is displayed
+* Clicking on ""<"" scrolls backwards (for example, image 5 of 5 is opened with an initial call)
+* Click on "">"" to scroll forwards (after the last image, the system starts again at image 1)
+* Click on X to close the view
+"
+"779","B","As a user, I would like to be able to use the shop in the most common current browsers so that I can place my order without any problems.",""
+"780","B","As a user, I would like to see existing reviews in the article detail page to get an impression of the article.","* if reviews are available, they are displayed at the bottom of the list
+* if no reviews are available, the display is omitted
+"
+"781","B","As a user, I would like to see existing reviews in the article detail page to get an impression of the article.","* if reviews are available, they are displayed at the bottom of the list
+* if no reviews are available, the display is omitted
+* Mark the corresponding entry in the backend: (shop) if information is displayed on the details page
+* Compare line height with the designs
+"
+"782","B","As a user, I would like to see existing classifications in the article detail page to be able to categorise the article better.","* if classifications are available, they are displayed as the penultimate item in the list
+* If no classifications are available, the display is omitted
+* Codes are not displayed
+* The order of the classifications is: custom, subject (content & addition), WGS, keywords
+* It is clear from which classification a value is from
+* Display in full width, one below the other
+* Display of selected subject area with tree structure up to the top node (path is still comprehensible)
+* Note loading times for many subject areas!
+"
+"784","B","As a user, I would like to see existing author information on the article detail page.","* if author information is available, it is displayed as the third last item in the list
+* if no information is available, the display is omitted
+"
+"785","B","As a user, I would like to see existing videos on the item detail page.","* if videos are available, they are displayed as the fourth-last item in the list
+* If no videos are available, they are not displayed
+* Mark the corresponding entry in the backend: (shop) if information is displayed on the details page
+"
+"786","B","As a user, I would like a customised display of the product information.","* Information is displayed according to the screen, if available
+* Check font types and spacing
+* Display of all ONIX fields & other wordings in German
+"
+"787","B","As a user, I would like to have a customised display of the product information so that it is clearly arranged.","* Info is displayed according to the screen
+* Info is displayed if it is maintained
+* Spacing is standardised
+* Block display is standardised between the title detail pages: no visual ""jump"" when changing from differently maintained content
+* ONIX codes A01 are displayed as authors above the title (all others are listed at the bottom of the detail page)
+* A maximum of 2 or 3 lines of authors are displayed. The rest is dotted out
+"
+"788","B","As an NBSL and/or  user and would like to have a report on a monthly basis of the titles already keyworded by NBSL in order to be able to use this for accounting purposes.",""
+"789","B","As an NBSL and/or  user and would like to have a report on a monthly basis of the securities already classified by NBSL in order to be able to use it for accounting purposes.",""
+"790","B","As a user, I would like to request a new password when I am not logged in.",""
+"793","B","As a user, I would like to have my email checked before it is used for registration to check whether it is already circulating on the net.",""
+"794","B","As a user, I would like links to have further content and information on an article so that I can select these separately.","* Information is displayed according to the screen
+* Display of reading samples: Image which is entered in the TRS under Media data 23 - Image: sample content (Translate: ""Image: reading sample""!) or document which is maintained under Additional information 23 - Reading sample (shop labelling!)
+* Display of content: Image which is entered in the TRS for media data 22 - Image: table of contents (Translate: ""Image: table of contents""!) or document which is maintained under Additional information 04 - Table of contents (shop labelling!)
+"
+"795","B","As a user, I would like to be offered a print function so that I can use the browser's print function.","* The ""Print page"" icon is displayed
+* Click on the icon to open the browser's print menu
+* The cover is displayed smaller than it currently is
+* All text areas are displayed
+* Buttons do not necessarily have to be displayed"
+"796","B","As a user, I would like to receive a separate confirmation message after completing the order.","* Success message as a separate page after successful order completion
+"
+"797","B","As a user, I would like to see in the shopping basket which elements make up the total amount shown.","* The total is displayed in a box in the shopping cart
+* The net total is displayed
+* The various VAT components are listed separately
+* The gross total is displayed
+* If the shopping cart is changed, the prices are updated"
+"798","B","As a shop user, you would like to see additional information on the start page in order to have an overview of the advantages of the shop.","* The four columns are displayed with the wording used in the screen
+* The graphics are also displayed according to the design
+* The area is only displayed on the home page
+"
+"801","B","As a TRS user, I would like to have a sorted selection in the dropdownAdditional information > Text typethe most frequently used fields should be displayed (translated) at the top as the first elements in the dropdown.",""
+"802","B","As a shop user, I would like to be directed to a landing page when I click on the main menu item Legal to get a topic-specific page with a submenu.","* Click on Right to open the landing page
+* The account areas are arranged according to the design
+* The breadcrumb forms the path ""Home > Legal""
+* Tree is integrated
+* Tree is searchable via text field and filters down to input
+* Click on sheet of the upper levels opens subcategories if available
+* Clicking on the leaf at the lowest level leads to the search with corresponding filtering
+* Search is carried out specifically according to the selected classification, not according to parent codes
+* The basis for the tree structure is the custom classification ""Law""
+* The tree is loaded automatically and is not maintained editorially
+* The tree can have a depth of up to 8 nodes
+* Longer lists can be searched via scrollbar
+"
+"803","B","As a shop user, I would like to have a submenu displayed on the landing page right as a hierarchical tree in order to be able to select articles more clearly.","* The submenu is displayed according to the classification schema.
+* All elements are collapsed internally at root level
+* Clicking on a category expands the child elements
+* A scrollbar is available for longer entries
+  
+"
+"805","B","As a shop editor, I would like to be able to generate advertising blocks to draw attention to certain promotions and offers.","* An advertising block is displayed as an example on the ""Legal"" page (with copied texts)
+* Clicking on the link takes me to a freely selected page in my own tab
+"
+"806","B","As a shop user, I would like to be directed to a landing page when I click on the main menu item Taxes to get a topic-specific page with a submenu.","* Click on ""Taxes"" to open the landing page
+* The account areas are arranged according to the design
+* The breadcrumb forms the path ""Home > Taxes""
+* Tree is integrated
+* Tree is searchable via text field and filters down to input
+* Clicking on the upper level sheet opens subcategories if available
+* Clicking on the leaf at the lowest level leads to the search with corresponding filtering
+* Search is carried out specifically according to the selected classification, not according to parent codes
+* The custom classification ""Taxes"" forms the basis for the tree structure
+* The tree is loaded automatically and is not maintained editorially
+* The tree can have a depth of up to 8 nodes
+* Longer lists can be searched via scrollbar
+"
+"807","B","As a shop user, I would like to have a submenu displayed as a hierarchical tree on the taxes landing page in order to be able to select items more clearly.","* The submenu is displayed according to the classification schema.
+* All elements are collapsed internally at root level
+* Clicking on a category expands the child elements
+* A scrollbar is available for longer entries
+  
+"
+"809","B","As a user, I would like to see detailed information when I click on a conference I have found in order to find out more.","* Detail page with
++ cover, category
++ Media if maintained + Print page next to it
++ Details: address, time (period)
++ contact persons are left out
++ Conference organiser
++ Other date options will be left out for now
++ Description
++ Programme
++ Price panel: Show normal price & reduced price if applicable
++ Availability: ""Grey - availability unknown""
++ Seat reservation as specified above
+"
+"810","B","As a customer, I would like to receive an invoice on which all titles are shown in euros.",""
+"811","B","The last step in the ordering process is the mobile order overview.","* Edit order note
+* Display of selected address & shipping & payment information
+* Grouped display of items that can be pre-ordered
+* Totals overview & trigger order
+* Forwarding to order confirmation page
+"
+"813","B","As a user, I would like to be notified if I am editing a title and unintentionally close the tab.",""
+"815","B","As an administrator I want to use an HTML-Editor to format texts for Titles.","* Instead of the multiline textbox an HTML Editor should be integrated in Section ""additional information"" for the textfield
+* The TextFormat should be set to HTML (02)
+* The Devextreme HTML-Editor should be used"
+"816","B","As a user, I would like to access the  E-Book Store via the main menu.",""
+"817","B","As an administrator I want to add ""Aktualisierungszyklus"" (update cycle) to Online-Products.","* An text-field has to be added to the section ""Hauptdaten"" is ProductType is ""Online"". Label: ""Aktualisierungszyklus""
+* If this textfield is filled, it has to be disyplayed on the title detail page with Label ""Aktualisierungszyklus"" (see red marker)
+
+"
+"818","B","As an user I want to order Online-databases via form.","* Titles with Format ""online database"" (DH) have no add to cart-Button
+* Instead they have the a button ""request price quote""
+* By clicking this button a Form is opened to get in contact with the merchant."
+"819","B","As an user I want to order Online-databases via form.","* Titles with Format ""online database"" (DH) have no add to cart-Button
+* Instead they have the a button ""request price quote""
+* By clicking this button a Form is opened to get in contact with the merchant."
+"822","B","As a webshop user, I would like the subscription price to be displayed.","The subscription price should disappear automatically after the expiry dateThe subscription price should appear in the order email addressThe subscription price should appear in my orders (compare design at checkout)
+"
+"823","B","As a webshop user, I would like the subscription price to be displayed on the details page.","If a title has a special price, this will be displayed.  
+The special price is shown in the order e-mail address
+The special price should appear in my orders.  
+"
+"824","B","As a webshop user, I would like to have the graduated prices displayed on the detail page.","* If the title has graduated prices, they are all displayed.  
+* The selected graduated price is shown in the order email address
+* The selected graduated price is shown in my orders"
+"826","B","As a webshop user, I want to be able to copy any ISBN, wherever I find it in the shop, with one click.",""
+"827","B","As a user, I want to be able to delete wishlists that I received by link from other users.",""
+"828","B","As a user I would like to be notified when I have received a permission and when a video has been uploaded for my course.",""
+"829","B","As a user, I want to buy on-demand items immediately.",""
+"830","B","As a user I would like to filter meetings by type.",""
+"831","B","As a  user, I would like to have the orders of ""on-demand videos"" and ""webinars"" in the Shopadmin event table.",""
+"99","C","As a logged in B2B user with permission for libraries I want to see my own inventory articles in the search preview.","- Display of the first 4 hits. first without prices
+- ""Show all stocks""
+- Linking by clicking on link in ""all stocks"" with restriction on search
+- The search of the DEVExpress table must contain the search word
+- Search term must be marked by highlighting."
+"100","C","As a logged in B2B user, I want to have permissions for ""Bestände"" (stocks).","If right ""Bestände ansehen"" is set the menu ""Bibliothek"" is shown, but not the entry ""Wareneingang"".If right ""Bestände berarbeiten"" is set menu ""Bibliothek"" is shown.If right ""Wareneingang"" is set menu ""Wareneingang"" is shown.  
+"
+"101","C","As a logged in B2B user, with permission for ""Bibliothek/Wareneingang"" I want to have a tile with new incoming deliveries.",""
+"103","C","As a logged in B2B user, I want to enter an EAN/ISBN in the order form which is not in the catalogue.","1. Enter 978-3-406-72500-5 -> article ""Palandt, Bürgerliches Gesetzbuch"" must be found and it must be possible to enter a note (""Hinweis"" and ""Abobeginn""). ""Abobeginn"" only for journals.   
+2. Enter 9786321547895 -> no article should be found and the number continues to be displayed. All fields can be edited.
+3. The new tooltip text is shown, when hovering above the fields which cannot be edited.4. Enter 0341-1915 -> ""Abobeginn"" should be displayed and active.   
+
+"
+"104","C","As a logged in B2B customer admin I want to edit individual fields for my ""Bibliothek"" (stocks) -> ""Feldpflege"".",""
+"105","C","As a logged in B2B admin I want to create users without a salutation to have general users.","* Show selection list with empty entry.
+* Salutation could be empty for creating and editing users.  
+* Default is ""Ms."".  
+"
+"106","C","As a logged in B2B user I want to change the order of the entries in the left flyout menu to optimize my workflows.",""
+"107","C","As a logged in B2B user I want to have a confirmation dialogue before resetting the list to the basic settings.","* Click on ""reject changes"" sets the list back to basic settings.
+* Click on ""save changes"" opens the right flyout navigation to save the list.  
+"
+"108","C","As a user I want to see and order only E-Books on .de/Business/SOL4 which are available.",""
+"109","C","As a B2B user, I only want to see order fields which I have edited in the order confimation e-mail.",""
+"111","C","As a B2B user I want to see net or gross values as configured for my customer.",""
+"112","C","As a punchout user with the right ""punchout"" I want to see and order products with obligation acceptance.","- listed in OrderConfirmation- after ""Senden"" --> StatusCode = ""WS""- after delete in Basket, reload of DevExtreme list --> item must listed again"
+"113","C","As a logged in B2B user I want to change the order of readers in existing reader lists.",""
+"114","C","As a logged in administrator I want to set ""Rechnungsadresse"" and ""Lieferadresse"" for a user in ""Nutzer verwalten"" to restrict the access.","If the restriction for one or more invoice or delivery addresses is set, only the orders, receipts and statistics for this addresses are shown in DevExtreme lists, tiles, shopping cart and user settings."
+"116","C","As a logged in B2B user (incl. punchout) I want to have a tile with the products with obligation acceptance.","A tile can be added to the dashboard.  
+If number is ""0"" links are deactivated.If number is > 0 the links are activated and pointing to cart.  
+  
+"
+"117","C","As a logged in B2B administrator I want to set gross or net values for customers in ""Kundeneinstellungen"".","If the switch is not activated show net prices in the whole system. See list in user story 17363.  
+"
+"118","C","As a logged in B2B administrator I want to have the right to set ""Preisdarstellung"" (prices) for customers.","If the right is set the entry ""Preisdarstellung"" is displayed.If the right is not set the whole entry ""Preisdarstellung"" is not displayed.If the right is set the user with permission can change the switch control button to inactive.  
+"
+"119","C","As a logged in IT Admin I want to find and edit all B2C users.",""
+"122","C","As a logged in B2B user I want to have order confirmations as a default.",""
+"123","C","As a logged in B2B user I want to filter more than one ""Verlag"" (publisher) in lists.",""
+"124","C","As a logged in B2B user I want to enter an EAN/ISBN in the order form which is not in the catalogue without validation message.","1. Enter 9786321547895 -> no article should be found and the number continues to be displayed. All fields can be edited.2. The red validation text ""ISBN nicht gefunden"" is not displayed any more
+
+"
+"125","C","As a B2B user I want to see net or gross values as configured for my customer.",""
+"126","C","As a punchout-user, I want to order bundle-titles in basket splitted for VAT differences all over the system.","* Bundles can only ordered together.
+* It should not be possible to delete only one part of bundles
+* It should not be possible to change the amount for only one part of bundles
+* If the print part is deleted the online part is also deleted
+* changing the amount of print part also changes the amount of the online part"
+"127","C","As a punchout-user, I want to have splitted information for the VAT prices on position level.",""
+"128","C","As a logged in B2B user with permission I want to have a column ""Leserliste"" in ""Aufträge"" lists for journals and sequels.","Test on staging:Customer: 14024540
+Order number:"" 1697690 with reader list""Order number:""   
+"
+"129","C","As a punchout-user, I want to order bundle-titles in basket splitted for VAT differences for obbligation acceptance.",""
+"130","C","As a logged in B2B user I want to send my notes for ""Auftragstyp: Abonnement"" (subscriptions) to the responsible  branch ""Abo"".",""
+"134","C","As a logged in B2B user with permission I want to search and filter my journals and sequels for readers.",""
+"137","C","As a logged in B2B user with permission for libraries I want to create new titles with information from catalogue.",""
+"138","C","As a logged in B2B user with permission I want to have a link to the detail view of my library articles in the search preview.",""
+"139","C","As a logged in B2B user I want to have only one order label as a default.",""
+"140","C","As a logged in B2B user I want to see shares that are distributed among different cost centers - column ""Kostenstelle"".",""
+"141","C","As a logged in B2B user I want to see shares that are distributed among different cost centers - tab ""Kostenstellen"".",""
+"142","C","As a logged in B2B user I want to see shares that are distributed among different cost centers - tab ""Belege"" amount.",""
+"143","C","As a logged in B2B user I want to see shares that are distributed among different cost centers - ""Belege"" tab ""Beleg"".",""
+"144","C","As a logged in B2B user, I only want to have reader lists for print journals and sequels - Import from euro-Sales.",""
+"145","C","As a logged in B2B user, I only want to have reader lists for print journals and sequels - Removing of existing reader lists for online parts.",""
+"147","C","As a B2B user in net mode I want to see net values for different product forms.",""
+"638","C","As a user I want to add and edit new items (""example"").",""
+"639","C","As a  Marketing Admin I want to use any extension provided by Umbraco to generate content and functionallity under .",""
