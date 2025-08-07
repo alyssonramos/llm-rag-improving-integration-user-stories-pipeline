@@ -1,0 +1,10 @@
+[
+    "Given que o usuário está logado, When ele solicita a exclusão da conta, Then o sistema deve remover todos os dados associados.",
+    "Given que o usuário está logado, When ele solicita a pausa da conta, Then o sistema deve suspender temporariamente o acesso.",
+    "Given que a conta possui uma assinatura ativa, When o usuário tenta excluí-la, Then o sistema deve exibir uma mensagem impedindo a ação.",
+    "Given que o usuário está no histórico de pedidos, When ele seleciona um intervalo de datas, Then o sistema deve exibir apenas os pedidos desse período.",
+    "Given que o usuário está no histórico de pedidos, When ele acessa a página, Then o sistema deve exibir no máximo 50 pedidos por página.",
+    "Given que o usuário esqueceu a senha, When ele solicita redefinição, Then o sistema deve enviar um link para o e-mail cadastrado.",
+    "Given que um novo fornecedor se cadastrou, When o administrador analisar a solicitação, Then ele deve poder aprovar ou rejeitar o cadastro.",
+    "Given que o vendedor está no painel, When ele acessa a seção de vendas, Then o sistema deve exibir o total de vendas do mês."
+]
